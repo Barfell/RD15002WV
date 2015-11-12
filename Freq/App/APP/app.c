@@ -135,6 +135,7 @@ void task3(void)
 	SW_12V(1);//电源
 	SW_5V(1);//正负电源，用于检测回波Z
 	FreqModuleInit();//测频率模块初始化
+	LTC2402Init();
 	GetFreq(1);
 	read_dev_id(dev_ID);//读取ID
 
@@ -143,33 +144,30 @@ void task3(void)
 		OSTimeDlyHMSM(0,0,0,10,OS_OPT_TIME_DLY,&err);
 		if(UploadFlag == 1)//确认需要上传数据了
 		{
-			
 			FreqModuleInit();//测频率模块初始化
 			LTC2402Init();
 			GetFreq(1);
-			SW_VW(5);
-			OSTimeDlyHMSM(0,0,0,200,OS_OPT_TIME_DLY,&err);
-			
-			
+			read_dev_id(dev_ID);//读取ID			
 sprintf(str_buff,"SCT200T15003-Time: %s\r\n\
 SCT200T15003-ID: %s\r\n\
 SCT200T15003-Mode: xxx minutes Internal\r\n\
 SCT200T15003-Current voltage = xx.xxxV\r\n\
 SCT200T15003-Channel: 1  Temperature :%f\r\n\
-SCT200T15003-Channel: 2  Temperature :xx.xxx'c\r\n\
-SCT200T15003-Channel: 3  Temperature :xx.xxx'c\r\n\
-SCT200T15003-Channel: 4  Temperature :xx.xxx'c\r\n\
+SCT200T15003-Channel: 2  Temperature :%f\r\n\
+SCT200T15003-Channel: 3  Temperature :%f\r\n\
+SCT200T15003-Channel: 4  Temperature :%f\r\n\
 SCT200T15003-Channel: 1  FREQUENCY:%f\r\n\
 SCT200T15003-Channel: 2  FREQUENCY:%f\r\n\
 SCT200T15003-Channel: 3  FREQUENCY:%f\r\n\
 SCT200T15003-Channel: 4  FREQUENCY:%f\r\n",
-get_time(),dev_ID,GetNTCTemperature(LTC2402_GetResistance()),GetFreq(1),GetFreq(2),GetFreq(3),GetFreq(4));
+get_time(),dev_ID,\
+GetNTCTemperature(LTC2402_GetResistance(1)),\
+GetNTCTemperature(LTC2402_GetResistance(2)),\
+GetNTCTemperature(LTC2402_GetResistance(3)),\
+GetNTCTemperature(LTC2402_GetResistance(4)),\
+GetFreq(5),GetFreq(6),GetFreq(7),GetFreq(8));
 			HandleDataPackage(str_buff);//打包通过串口发送
 			
-
-
-
-
 
 			UploadFlag = 0;
 			SW_12V(0);//电源
@@ -181,8 +179,12 @@ get_time(),dev_ID,GetNTCTemperature(LTC2402_GetResistance()),GetFreq(1),GetFreq(
 			bsp_io_init();//IO口
 			SW_12V(1);//电源
 			SW_5V(1);//正负电源，用于检测回波
-			OSTimeDlyHMSM(0,0,0,500,OS_OPT_TIME_DLY,&err);
+			//OSTimeDlyHMSM(0,0,0,500,OS_OPT_TIME_DLY,&err);
 			UsartConfig();//串口设置配置
+			FreqModuleInit();//测频率模块初始化
+			LTC2402Init();
+			GetFreq(1);
+			read_dev_id(dev_ID);//读取ID
 		}
 	}
 }

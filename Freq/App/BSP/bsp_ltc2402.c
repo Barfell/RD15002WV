@@ -44,6 +44,8 @@ void SPI1_Init(void)
 	SPI_Cmd(SPI1, ENABLE); //使能SPI外设
 		 
 }   
+
+
 void SPI1_SetSpeed(unsigned char SPI_BaudRatePrescaler)
 {
 	assert_param(IS_SPI_BAUDRATE_PRESCALER(SPI_BaudRatePrescaler));//判断有效性
@@ -51,6 +53,8 @@ void SPI1_SetSpeed(unsigned char SPI_BaudRatePrescaler)
 	SPI1->CR1|=SPI_BaudRatePrescaler;	//设置SPI1速度 
 	SPI_Cmd(SPI1,ENABLE); //使能SPI1
 } 
+
+
 unsigned char SPI1_ReadWriteByte(unsigned char TxData)
 {		
 	unsigned char u8charRet;
@@ -60,18 +64,24 @@ unsigned char SPI1_ReadWriteByte(unsigned char TxData)
 	u8charRet = SPI_I2S_ReceiveData(SPI1);//返回通过SPIx最近接收的数据
 	return  u8charRet;	
 }
+
+
 unsigned char LTC2402_TEST_EOC(void)
 {
 	OS_ERR      err;
-	OSTimeDlyHMSM(0,0,0,200,OS_OPT_TIME_DLY,&err);
+	OSTimeDlyHMSM(0,0,0,300,OS_OPT_TIME_DLY,&err);
 	return LTC2402_ReadByte();
 }
+
+
 unsigned char LTC2402_ReadByte(void)
 {
 	unsigned char u8charValue;
 	u8charValue = SPI1_ReadWriteByte(0XFF);    
 	return u8charValue;
 }
+
+
 //初始化
 void LTC2402Init(void)
 {
@@ -80,7 +90,7 @@ void LTC2402Init(void)
 	GPIO_ResetBits(GPIOA, GPIO_Pin_8);//cs - low
 }
 //获取电阻值
-double LTC2402_GetResistance(void)
+double LTC2402_GetResistance(unsigned char channel)
 {
     unsigned char u8charresbuf[4];
     unsigned char EOC = 0;
@@ -91,6 +101,7 @@ double LTC2402_GetResistance(void)
 	double ch1 = 0;
 	double ch0 = 0;
 	unsigned char i = 0;
+	SW_VW(channel);
     for(i = 0;i < 4;i++)
     {
     	EOC = LTC2402_TEST_EOC();
