@@ -237,24 +237,24 @@ void TIM3_IRQHandler(void)
 void EXTI9_5_IRQHandler(void)
 {
 	OSIntEnter();
-		if(EXTI_GetITStatus(EXTI_Line7) != RESET)
+		if(EXTI_GetITStatus(EXTI_Line9) != RESET)
 		{
-			EXTI_ClearITPendingBit(EXTI_Line7);
+			EXTI_ClearITPendingBit(EXTI_Line9);
 		}
 	OSIntExit();
 }
 
 
 
-void USART1_IRQHandler(void)
+void USART3_IRQHandler(void)
 {
 	unsigned char 	RXData        = 0;
 	OSIntEnter();
 	
-	if (USART_GetFlagStatus(USART1, USART_FLAG_RXNE) != RESET)
+	if (USART_GetFlagStatus(USART3, USART_FLAG_RXNE) != RESET)
     {
-		USART_ClearFlag(USART1, USART_FLAG_RXNE);
-		RXData = USART_ReceiveData(USART1);
+		USART_ClearFlag(USART3, USART_FLAG_RXNE);
+		RXData = USART_ReceiveData(USART3);
 
 		if(IsCMDflag == 1)//»∑»œ «√¸¡Ó
 		{

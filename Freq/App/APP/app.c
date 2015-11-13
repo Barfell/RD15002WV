@@ -144,6 +144,7 @@ void task3(void)
 		OSTimeDlyHMSM(0,0,0,10,OS_OPT_TIME_DLY,&err);
 		if(UploadFlag == 1)//确认需要上传数据了
 		{
+			//printf("command confirmed!\r\n");
 			FreqModuleInit();//测频率模块初始化
 			LTC2402Init();
 			GetFreq(1);

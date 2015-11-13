@@ -43,16 +43,19 @@ unsigned int HardGenCrc32(unsigned int* puData, unsigned int uSize)
 	return CRC_CalcBlockCRC((unsigned int *)puData, (unsigned int)uSize);
 }
 
+
+
 void usart_update_packet(unsigned char *p,unsigned int length)
 {
 	while(length != 0)
 	{
 		//while (USART_GetFlagStatus(USART1, USART_FLAG_TC) == RESET);
-		USART_SendData(USART1, *(p++) );
-		while (USART_GetFlagStatus(USART1, USART_FLAG_TC) == RESET);
+		USART_SendData(USART3, *(p++) );
+		while (USART_GetFlagStatus(USART3, USART_FLAG_TC) == RESET);
 		length--;
 	}
 }
+
 
 void HandleDataPackage(unsigned char *pBuf)
 {
