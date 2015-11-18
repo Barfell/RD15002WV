@@ -232,24 +232,42 @@ double GetFreq(unsigned char ch)
 	SW_VW(ch);//Ñ¡ÔñÍ¨µÀ
 	
 	
-	SW_VW_TRCN(0);
-	TranPulse(4000,10);
+	SW_VW_TRCN(0);//tran
+	
+	TranPulse(8000,15);
+	OSTimeDlyHMSM(0,0,0,1,OS_OPT_TIME_DLY,&err);
+	TranPulse(7500,15);
+	OSTimeDlyHMSM(0,0,0,1,OS_OPT_TIME_DLY,&err);
+	TranPulse(7000,15);
+	OSTimeDlyHMSM(0,0,0,1,OS_OPT_TIME_DLY,&err);
+	TranPulse(6500,15);
+	OSTimeDlyHMSM(0,0,0,1,OS_OPT_TIME_DLY,&err);
+	TranPulse(6000,15);
+	OSTimeDlyHMSM(0,0,0,1,OS_OPT_TIME_DLY,&err);
+	TranPulse(5500,15);
 	OSTimeDlyHMSM(0,0,0,2,OS_OPT_TIME_DLY,&err);
-	TranPulse(35000,10);
+	TranPulse(5000,15);
+	OSTimeDlyHMSM(0,0,0,2,OS_OPT_TIME_DLY,&err);
+	TranPulse(4500,15);
+	OSTimeDlyHMSM(0,0,0,2,OS_OPT_TIME_DLY,&err);
+	TranPulse(4000,15);
 	OSTimeDlyHMSM(0,0,0,4,OS_OPT_TIME_DLY,&err);
-	TranPulse(3000,10);
+	TranPulse(3500,15);
 	OSTimeDlyHMSM(0,0,0,4,OS_OPT_TIME_DLY,&err);
-	TranPulse(2500,10);
-	OSTimeDlyHMSM(0,0,0,4,OS_OPT_TIME_DLY,&err);
-	TranPulse(2000,10);
+	TranPulse(3000,15);
 	OSTimeDlyHMSM(0,0,0,8,OS_OPT_TIME_DLY,&err);
-	TranPulse(1500,10);
+	TranPulse(2500,15);
 	OSTimeDlyHMSM(0,0,0,8,OS_OPT_TIME_DLY,&err);
-	TranPulse(1000,10);
+	TranPulse(2000,15);
 	OSTimeDlyHMSM(0,0,0,12,OS_OPT_TIME_DLY,&err);
-	TranPulse(500,10);
+	TranPulse(1500,15);
+	OSTimeDlyHMSM(0,0,0,15,OS_OPT_TIME_DLY,&err);
+	TranPulse(1000,15);
 	OSTimeDlyHMSM(0,0,0,20,OS_OPT_TIME_DLY,&err);
-	SW_VW_TRCN(1);
+	TranPulse(500,15);
+	OSTimeDlyHMSM(0,0,0,30,OS_OPT_TIME_DLY,&err);
+	
+	SW_VW_TRCN(1);//recive
 	OSTimeDlyHMSM(0,0,0,20,OS_OPT_TIME_DLY,&err);//Í£¶Ù£¬µÈ´ý¼¤ÀøÂö³åÏû³ý
 	return Measure();
 }

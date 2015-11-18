@@ -28,8 +28,9 @@
 ..\obj\main.o: D:\Program Files\mdk\ARM\CMSIS\Include\core_cm4_simd.h
 ..\obj\main.o: D:\Program Files\mdk\ARM\Inc\ST\STM32F4xx\system_stm32f4xx.h
 ..\obj\main.o: ..\App\BSP\stm32f4xx_conf.h
-..\obj\main.o: ..\LIB\INC\stm32f4xx_crc.h
+..\obj\main.o: ..\LIB\INC\stm32f4xx_adc.h
 ..\obj\main.o: ..\App\BSP\stm32f4xx.h
+..\obj\main.o: ..\LIB\INC\stm32f4xx_crc.h
 ..\obj\main.o: ..\LIB\INC\stm32f4xx_exti.h
 ..\obj\main.o: ..\LIB\INC\stm32f4xx_flash.h
 ..\obj\main.o: ..\LIB\INC\stm32f4xx_gpio.h
@@ -50,6 +51,7 @@
 ..\obj\main.o: ..\App\BSP\bsp_sst25vf064.h
 ..\obj\main.o: ..\App\BSP\bsp_rtc.h
 ..\obj\main.o: ..\App\BSP\bsp_io_control.h
+..\obj\main.o: ..\App\BSP\bsp_485.h
 ..\obj\main.o: ..\App\APP\app.h
 ..\obj\main.o: ..\App\includes.h
 ..\obj\main.o: ..\App\APP\FreqMeasurement.h

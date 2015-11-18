@@ -68,6 +68,7 @@
 #include  "bsp_sst25vf064.h"
 #include  "bsp_rtc.h"
 #include  "bsp_io_control.h"
+#include  "bsp_485.h"
 
 /*------app-----------*/
 #include  "app.h"

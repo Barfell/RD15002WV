@@ -8,8 +8,9 @@
 ..\obj\stm32f4xx_spi.o: D:\Program Files\mdk\ARM\CMSIS\Include\core_cm4_simd.h
 ..\obj\stm32f4xx_spi.o: D:\Program Files\mdk\ARM\Inc\ST\STM32F4xx\system_stm32f4xx.h
 ..\obj\stm32f4xx_spi.o: ..\App\BSP\stm32f4xx_conf.h
-..\obj\stm32f4xx_spi.o: ..\LIB\INC\stm32f4xx_crc.h
+..\obj\stm32f4xx_spi.o: ..\LIB\INC\stm32f4xx_adc.h
 ..\obj\stm32f4xx_spi.o: ..\App\BSP\stm32f4xx.h
+..\obj\stm32f4xx_spi.o: ..\LIB\INC\stm32f4xx_crc.h
 ..\obj\stm32f4xx_spi.o: ..\LIB\INC\stm32f4xx_exti.h
 ..\obj\stm32f4xx_spi.o: ..\LIB\INC\stm32f4xx_flash.h
 ..\obj\stm32f4xx_spi.o: ..\LIB\INC\stm32f4xx_gpio.h

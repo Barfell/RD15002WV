@@ -36,7 +36,7 @@ void SPI1_Init(void)
 	SPI_InitStructure.SPI_CPOL = SPI_CPOL_High;		//串行同步时钟的空闲状态为高电平
 	SPI_InitStructure.SPI_CPHA = SPI_CPHA_2Edge;	//串行同步时钟的第二个跳变沿（上升或下降）数据被采样
 	SPI_InitStructure.SPI_NSS = SPI_NSS_Soft;		//NSS信号由硬件（NSS管脚）还是软件（使用SSI位）管理:内部NSS信号有SSI位控制
-	SPI_InitStructure.SPI_BaudRatePrescaler = SPI_BaudRatePrescaler_256;		//定义波特率预分频的值:波特率预分频值为256
+	SPI_InitStructure.SPI_BaudRatePrescaler = SPI_BaudRatePrescaler_32;		//定义波特率预分频的值:波特率预分频值为256
 	SPI_InitStructure.SPI_FirstBit = SPI_FirstBit_MSB;	//指定数据传输从MSB位还是LSB位开始:数据传输从MSB位开始
 	SPI_InitStructure.SPI_CRCPolynomial = 7;	//CRC值计算的多项式
 	SPI_Init(SPI1, &SPI_InitStructure);  //根据SPI_InitStruct中指定的参数初始化外设SPIx寄存器
@@ -69,7 +69,7 @@ unsigned char SPI1_ReadWriteByte(unsigned char TxData)
 unsigned char LTC2402_TEST_EOC(void)
 {
 	OS_ERR      err;
-	OSTimeDlyHMSM(0,0,0,300,OS_OPT_TIME_DLY,&err);
+	OSTimeDlyHMSM(0,0,0,100,OS_OPT_TIME_DLY,&err);
 	return LTC2402_ReadByte();
 }
 
@@ -86,7 +86,7 @@ unsigned char LTC2402_ReadByte(void)
 void LTC2402Init(void)
 {
     SPI1_Init();
-	SPI1_SetSpeed(SPI_BaudRatePrescaler_32);
+	SPI1_SetSpeed(SPI_BaudRatePrescaler_128);
 	GPIO_ResetBits(GPIOA, GPIO_Pin_8);//cs - low
 }
 //获取电阻值
@@ -101,8 +101,11 @@ double LTC2402_GetResistance(unsigned char channel)
 	double ch1 = 0;
 	double ch0 = 0;
 	unsigned char i = 0;
+	
+	
+	
 	SW_VW(channel);
-    for(i = 0;i < 4;i++)
+    for(i = 0;i < 6;i++)
     {
     	EOC = LTC2402_TEST_EOC();
 	    if(  (EOC & 0x80) == 0  )//转换完毕
@@ -133,6 +136,8 @@ double LTC2402_GetResistance(unsigned char channel)
 	RES = RES/current;
     return RES;    
 }
+
+
 //计算温度
 double GetNTCTemperature(double NTCRes)
 {
@@ -140,12 +145,10 @@ double GetNTCTemperature(double NTCRes)
 	if(NTCRes>PT_Min && NTCRes < PT_Max)
 		{
 			fTem = (sqrt((PT_A*PT_ZeroTemRes)*(PT_A*PT_ZeroTemRes)-4*PT_B*PT_ZeroTemRes*(PT_ZeroTemRes-NTCRes))-PT_A*PT_ZeroTemRes)/2/PT_B/PT_ZeroTemRes;
-			//printf(" %.6f",fTem);
 		}
 	else if(NTCRes>NTC_Min && NTCRes < NTC_Max)
 		{
 			fTem = (1/((NTC_A) + (NTC_B*(log(NTCRes))) + (NTC_C*(log(NTCRes))*(log(NTCRes))*(log(NTCRes))))) - 273.2;
-			//printf(" %.6f",fTem);
 		}
 	else
 		{
