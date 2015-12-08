@@ -131,7 +131,6 @@ void task1(void)
 
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////
-//用户任务2 负责看门狗的喂狗
 void task2(void)
 {
 	OS_ERR      err;
@@ -139,6 +138,7 @@ void task2(void)
     while(1)
     {
 		OSTimeDlyHMSM(0,0,1,0,OS_OPT_TIME_DLY,&err);
+		//printf("11111111111\r\n");
     }
 }
 
@@ -158,7 +158,7 @@ void task3(void)
 	voltage_adc_init();
 	GetFreq(1);
 	read_dev_id(dev_ID);//读取ID
-
+ SW_VW(1);
 	while(1)
 	{			
 		OSTimeDlyHMSM(0,0,0,10,OS_OPT_TIME_DLY,&err);
@@ -173,25 +173,26 @@ sprintf(str_buff,"SCT200T15003-Time: %s\r\n\
 SCT200T15003-ID: %s\r\n\
 SCT200T15003-Mode: xxx minutes Internal\r\n\
 SCT200T15003-Current voltage = %fV\r\n\
-SCT200T15003-Channel: 1  Temperature :%f\r\n\
-SCT200T15003-Channel: 2  Temperature :%f\r\n\
-SCT200T15003-Channel: 3  Temperature :%f\r\n\
-SCT200T15003-Channel: 4  Temperature :%f\r\n\
+SCT200T15003-Channel: 5  Temperature :%f\r\n\
+SCT200T15003-Channel: 6  Temperature :%f\r\n\
+SCT200T15003-Channel: 7  Temperature :%f\r\n\
+SCT200T15003-Channel: 8  Temperature :%f\r\n\
 SCT200T15003-Channel: 1  FREQUENCY:%f\r\n\
 SCT200T15003-Channel: 2  FREQUENCY:%f\r\n\
 SCT200T15003-Channel: 3  FREQUENCY:%f\r\n\
 SCT200T15003-Channel: 4  FREQUENCY:%f\r\n",
 get_time(),dev_ID,get_dev_voltage(get_adc_value()),\
-GetNTCTemperature(LTC2402_GetResistance(1)),\
-GetNTCTemperature(LTC2402_GetResistance(2)),\
-GetNTCTemperature(LTC2402_GetResistance(3)),\
-GetNTCTemperature(LTC2402_GetResistance(4)),\
+GetNTCTemperature(LTC2402_GetResistance(5)),\
+GetNTCTemperature(LTC2402_GetResistance(6)),\
+GetNTCTemperature(LTC2402_GetResistance(7)),\
+GetNTCTemperature(LTC2402_GetResistance(8)),\
 GetFreq(1),GetFreq(2),GetFreq(3),GetFreq(4));
 			HandleDataPackage(str_buff);//打包通过串口发送
 			
 
 			UploadFlag = 0;
 			SW_12V(0);//电源
+			
 			SW_5V(0);//正负电源，用于检测回波
 			OSTimeDlyHMSM(0,0,0,500,OS_OPT_TIME_DLY,&err);
 			ConfigPINToListen();
@@ -209,6 +210,7 @@ GetFreq(1),GetFreq(2),GetFreq(3),GetFreq(4));
 			GetFreq(1);
 			read_dev_id(dev_ID);//读取ID
 		}
+//OSTimeDlyHMSM(0,0,10,0,OS_OPT_TIME_DLY,&err);
 	}
 }
 

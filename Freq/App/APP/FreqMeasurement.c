@@ -183,14 +183,14 @@ void FreqModuleInit(void)
 	RCC_APB1PeriphClockCmd(RCC_APB1Periph_TIM4, ENABLE);
 	TIM_TimeBaseStructure.TIM_Prescaler = 0;
 	TIM_TimeBaseStructure.TIM_CounterMode = TIM_CounterMode_Up;							
-	TIM_TimeBaseStructure.TIM_Period = 114;
+	TIM_TimeBaseStructure.TIM_Period = 109;
 	TIM_TimeBaseStructure.TIM_ClockDivision = 0;
 	TIM_TimeBaseStructure.TIM_RepetitionCounter = 0;
 	TIM_TimeBaseInit(TIM4, &TIM_TimeBaseStructure);
 	TIM_SelectInputTrigger(TIM4,TIM_TS_ETRF);
 	TIM_ETRClockMode2Config(TIM4,TIM_ExtTRGPSC_OFF,TIM_ExtTRGPolarity_NonInverted,0x2);//外部时钟引脚,模式2
 	TIM_OCInitStructure.TIM_OCMode = TIM_OCMode_Timing;
-	TIM_OCInitStructure.TIM_Pulse = 15;
+	TIM_OCInitStructure.TIM_Pulse = 10;
 	TIM_OC1Init(TIM4,&TIM_OCInitStructure);
 	TIM_ITConfig(TIM4,TIM_IT_CC1|TIM_IT_Update,ENABLE);
 	TIM_ClearFlag(TIM4,TIM_FLAG_Update); 
@@ -228,44 +228,25 @@ void TranPulse(unsigned int freq,unsigned char num)
 //获取某个通道的频率
 double GetFreq(unsigned char ch)
 {
+	unsigned int f = 0;
+	unsigned char i = 0;
+	unsigned char times = 0;
 	OS_ERR		err;
 	SW_VW(ch);//选择通道
 	
 	
 	SW_VW_TRCN(0);//tran
+	//OSTimeDlyHMSM(0,0,0,20,OS_OPT_TIME_DLY,&err);
 	
-	TranPulse(8000,15);
-	OSTimeDlyHMSM(0,0,0,1,OS_OPT_TIME_DLY,&err);
-	TranPulse(7500,15);
-	OSTimeDlyHMSM(0,0,0,1,OS_OPT_TIME_DLY,&err);
-	TranPulse(7000,15);
-	OSTimeDlyHMSM(0,0,0,1,OS_OPT_TIME_DLY,&err);
-	TranPulse(6500,15);
-	OSTimeDlyHMSM(0,0,0,1,OS_OPT_TIME_DLY,&err);
-	TranPulse(6000,15);
-	OSTimeDlyHMSM(0,0,0,1,OS_OPT_TIME_DLY,&err);
-	TranPulse(5500,15);
-	OSTimeDlyHMSM(0,0,0,2,OS_OPT_TIME_DLY,&err);
-	TranPulse(5000,15);
-	OSTimeDlyHMSM(0,0,0,2,OS_OPT_TIME_DLY,&err);
-	TranPulse(4500,15);
-	OSTimeDlyHMSM(0,0,0,2,OS_OPT_TIME_DLY,&err);
-	TranPulse(4000,15);
-	OSTimeDlyHMSM(0,0,0,4,OS_OPT_TIME_DLY,&err);
-	TranPulse(3500,15);
-	OSTimeDlyHMSM(0,0,0,4,OS_OPT_TIME_DLY,&err);
-	TranPulse(3000,15);
-	OSTimeDlyHMSM(0,0,0,8,OS_OPT_TIME_DLY,&err);
-	TranPulse(2500,15);
-	OSTimeDlyHMSM(0,0,0,8,OS_OPT_TIME_DLY,&err);
-	TranPulse(2000,15);
-	OSTimeDlyHMSM(0,0,0,12,OS_OPT_TIME_DLY,&err);
-	TranPulse(1500,15);
-	OSTimeDlyHMSM(0,0,0,15,OS_OPT_TIME_DLY,&err);
-	TranPulse(1000,15);
-	OSTimeDlyHMSM(0,0,0,20,OS_OPT_TIME_DLY,&err);
-	TranPulse(500,15);
-	OSTimeDlyHMSM(0,0,0,30,OS_OPT_TIME_DLY,&err);
+		for(f = 400;f<8400;f+=100)
+		{
+			times = 1000*15/f;
+			TranPulse(f,15);
+			if(times < 1)
+				{OSTimeDlyHMSM(0,0,0,1,OS_OPT_TIME_DLY,&err);}
+			else
+				{OSTimeDlyHMSM(0,0,0,times,OS_OPT_TIME_DLY,&err);}
+		}
 	
 	SW_VW_TRCN(1);//recive
 	OSTimeDlyHMSM(0,0,0,20,OS_OPT_TIME_DLY,&err);//停顿，等待激励脉冲消除
@@ -282,8 +263,8 @@ double Measure(void)
 		{
 			OSTimeDlyHMSM(0,0,0,1,OS_OPT_TIME_DLY,&err);
 			OverTime++;
-			if(OverTime > 200)//300ms超时
-			{OverTime = 0;break;}
+			if(OverTime > 250)//300ms超时
+			{OverTime = 0;OnFreq = 0;break;}
 		}
 	measureflag = 0;//测量完毕后清除状态
 	TIM_Cmd(TIM4,DISABLE);

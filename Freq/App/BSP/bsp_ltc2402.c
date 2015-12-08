@@ -153,6 +153,7 @@ double GetNTCTemperature(double NTCRes)
 	else
 		{
 			//printf("Get resistance Error");
+			fTem = 0;
 		}
 	return(fTem);
 }

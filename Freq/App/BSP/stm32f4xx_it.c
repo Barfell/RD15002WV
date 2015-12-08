@@ -193,8 +193,8 @@ void TIM4_IRQHandler(void)
 	// 外部脉冲达到100个
 	if(TIM_GetITStatus(TIM4, TIM_IT_Update) != RESET)
 	{
-		TIM_ClearITPendingBit(TIM4, TIM_IT_Update);
 		CountTimes = TIM2->CNT;//得到时间,结束计时
+		TIM_ClearITPendingBit(TIM4, TIM_IT_Update);
 		OnFreq = (double)30000000/(double)(CountTimes);//算出频率
 		TIM_Cmd(TIM4,DISABLE);
 		TIM4->CNT = 0;
@@ -206,8 +206,8 @@ void TIM4_IRQHandler(void)
 	//第15个脉冲开始计时
 	if(TIM_GetITStatus(TIM4, TIM_IT_CC1) != RESET)
 	{	
-		TIM_ClearITPendingBit(TIM4, TIM_IT_CC1);
 		TIM2->CNT = 0;
+		TIM_ClearITPendingBit(TIM4, TIM_IT_CC1);
 		TIM_Cmd(TIM2,ENABLE);//开始计时了
 	}
 	OSIntExit();//退出中断--ucosiii

@@ -7,6 +7,80 @@ E:\PROJECT\RD15002WV\RD15002WV\Freq\PRO\emWin.uvproj
 Project File Date:  11/13/2015
 
 <h2>Output:</h2>
+Build target 'Freq'
+compiling app.c...
+..\App\APP\app.c(172): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "char *restrict"
+compiling FreqMeasurement.c...
+..\App\APP\FreqMeasurement.c(232): warning:  #177-D: variable "i" was declared but never referenced
+..\App\APP\FreqMeasurement.c(275): warning: C4018W: division by zero: /
+compiling bsp_ltc2402.c...
+..\App\BSP\bsp_ltc2402.c(95): warning: C4017W: u8charresbuf may be used before being set
+linking...
+Program Size: Code=41784 RO-data=1416 RW-data=236 ZI-data=57676  
+FromELF: creating hex file...
+"..\obj\emWin.axf" - 0 Errors, 4 Warning(s).
+Build target 'Freq'
+linking...
+Program Size: Code=41784 RO-data=1416 RW-data=236 ZI-data=57676  
+FromELF: creating hex file...
+"..\obj\emWin.axf" - 0 Errors, 0 Warning(s).
+Build target 'Freq'
+linking...
+Program Size: Code=41784 RO-data=1416 RW-data=236 ZI-data=57676  
+FromELF: creating hex file...
+"..\obj\emWin.axf" - 0 Errors, 0 Warning(s).
+Build target 'Freq'
+linking...
+Program Size: Code=41784 RO-data=1416 RW-data=236 ZI-data=57676  
+FromELF: creating hex file...
+"..\obj\emWin.axf" - 0 Errors, 0 Warning(s).
+Build target 'Freq'
+linking...
+Program Size: Code=41784 RO-data=1416 RW-data=236 ZI-data=57676  
+FromELF: creating hex file...
+"..\obj\emWin.axf" - 0 Errors, 0 Warning(s).
+Build target 'Freq'
+linking...
+Program Size: Code=41784 RO-data=1416 RW-data=236 ZI-data=57676  
+FromELF: creating hex file...
+"..\obj\emWin.axf" - 0 Errors, 0 Warning(s).
+Build target 'Freq'
+linking...
+Program Size: Code=41784 RO-data=1416 RW-data=236 ZI-data=57676  
+FromELF: creating hex file...
+"..\obj\emWin.axf" - 0 Errors, 0 Warning(s).
+Build target 'Freq'
+compiling FreqMeasurement.c...
+..\App\APP\FreqMeasurement.c(232): warning:  #177-D: variable "i" was declared but never referenced
+..\App\APP\FreqMeasurement.c(275): warning: C4018W: division by zero: /
+compiling stm32f4xx_it.c...
+..\App\BSP\stm32f4xx_it.c(284): warning:  #1-D: last line of file ends without a newline
+linking...
+Program Size: Code=41792 RO-data=1416 RW-data=236 ZI-data=57676  
+FromELF: creating hex file...
+"..\obj\emWin.axf" - 0 Errors, 3 Warning(s).
+Build target 'Freq'
+linking...
+Program Size: Code=41792 RO-data=1416 RW-data=236 ZI-data=57676  
+FromELF: creating hex file...
+"..\obj\emWin.axf" - 0 Errors, 0 Warning(s).
+Build target 'Freq'
+linking...
+Program Size: Code=41792 RO-data=1416 RW-data=236 ZI-data=57676  
+FromELF: creating hex file...
+"..\obj\emWin.axf" - 0 Errors, 0 Warning(s).
+Build target 'Freq'
+compiling bsp_ltc2402.c...
+..\App\BSP\bsp_ltc2402.c(95): warning: C4017W: u8charresbuf may be used before being set
+linking...
+Program Size: Code=41792 RO-data=1416 RW-data=236 ZI-data=57676  
+FromELF: creating hex file...
+"..\obj\emWin.axf" - 0 Errors, 1 Warning(s).
+Build target 'Freq'
+linking...
+Program Size: Code=41792 RO-data=1416 RW-data=236 ZI-data=57676  
+FromELF: creating hex file...
+"..\obj\emWin.axf" - 0 Errors, 0 Warning(s).
 Load "..\\obj\\emWin.axf" 
 Set JLink Project File to "E:\PROJECT\RD15002WV\RD15002WV\Freq\PRO\JLinkSettings.ini"
 * JLink Info: Device "STM32F407VG" selected (1024 KB flash, 128 KB RAM).
@@ -30,7 +104,42 @@ ROMTableAddr = 0xE00FF003
 Target info:
 ------------
 Device: STM32F407VG
-VTarget = 3.241V
+VTarget = 3.261V
+State of Pins: 
+TCK: 0, TDI: 0, TDO: 0, TMS: 1, TRES: 1, TRST: 1
+Hardware-Breakpoints: 6
+Software-Breakpoints: 8192
+Watchpoints:          4
+JTAG speed: 500 kHz
+ 
+Erase Done.
+Programming Done.
+Verify OK.
+Application running ...
+Load "..\\obj\\emWin.axf" 
+Set JLink Project File to "E:\PROJECT\RD15002WV\RD15002WV\Freq\PRO\JLinkSettings.ini"
+* JLink Info: Device "STM32F407VG" selected (1024 KB flash, 128 KB RAM).
+ 
+JLink info:
+------------
+DLL: V4.78j, compiled Nov 22 2013 20:08:33
+Firmware: J-Link ARM V8 compiled Nov  8 2013 12:07:30
+Hardware: V8.00
+S/N : 17935099 
+Feature(s) : RDI,FlashDL,FlashBP,JFlash 
+ 
+* JLink Info: Found SWD-DP with ID 0x2BA01477
+* JLink Info: Found SWD-DP with ID 0x2BA01477
+* JLink Info: Found Cortex-M4 r0p1, Little endian.
+* JLink Info: FPUnit: 6 code (BP) slots and 2 literal slots
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+ROMTableAddr = 0xE00FF003
+ 
+Target info:
+------------
+Device: STM32F407VG
+VTarget = 3.254V
 State of Pins: 
 TCK: 0, TDI: 0, TDO: 0, TMS: 1, TRES: 1, TRST: 1
 Hardware-Breakpoints: 6
@@ -44,10 +153,11 @@ Verify OK.
 Application running ...
 Build target 'Freq'
 compiling FreqMeasurement.c...
+..\App\APP\FreqMeasurement.c(232): warning:  #177-D: variable "i" was declared but never referenced
 linking...
-Program Size: Code=42088 RO-data=1416 RW-data=236 ZI-data=57676  
+Program Size: Code=41792 RO-data=1416 RW-data=236 ZI-data=57676  
 FromELF: creating hex file...
-"..\obj\emWin.axf" - 0 Errors, 0 Warning(s).
+"..\obj\emWin.axf" - 0 Errors, 1 Warning(s).
 Load "..\\obj\\emWin.axf" 
 Set JLink Project File to "E:\PROJECT\RD15002WV\RD15002WV\Freq\PRO\JLinkSettings.ini"
 * JLink Info: Device "STM32F407VG" selected (1024 KB flash, 128 KB RAM).
@@ -71,7 +181,7 @@ ROMTableAddr = 0xE00FF003
 Target info:
 ------------
 Device: STM32F407VG
-VTarget = 3.241V
+VTarget = 3.254V
 State of Pins: 
 TCK: 0, TDI: 0, TDO: 0, TMS: 1, TRES: 1, TRST: 1
 Hardware-Breakpoints: 6
@@ -85,20 +195,11 @@ Verify OK.
 Application running ...
 Build target 'Freq'
 compiling FreqMeasurement.c...
+..\App\APP\FreqMeasurement.c(232): warning:  #177-D: variable "i" was declared but never referenced
 linking...
-Program Size: Code=42112 RO-data=1416 RW-data=236 ZI-data=57676  
+Program Size: Code=41832 RO-data=1416 RW-data=236 ZI-data=57676  
 FromELF: creating hex file...
-"..\obj\emWin.axf" - 0 Errors, 0 Warning(s).
-Build target 'Freq'
-linking...
-Program Size: Code=42112 RO-data=1416 RW-data=236 ZI-data=57676  
-FromELF: creating hex file...
-"..\obj\emWin.axf" - 0 Errors, 0 Warning(s).
-Build target 'Freq'
-linking...
-Program Size: Code=42112 RO-data=1416 RW-data=236 ZI-data=57676  
-FromELF: creating hex file...
-"..\obj\emWin.axf" - 0 Errors, 0 Warning(s).
+"..\obj\emWin.axf" - 0 Errors, 1 Warning(s).
 Load "..\\obj\\emWin.axf" 
 Set JLink Project File to "E:\PROJECT\RD15002WV\RD15002WV\Freq\PRO\JLinkSettings.ini"
 * JLink Info: Device "STM32F407VG" selected (1024 KB flash, 128 KB RAM).
@@ -122,7 +223,7 @@ ROMTableAddr = 0xE00FF003
 Target info:
 ------------
 Device: STM32F407VG
-VTarget = 3.248V
+VTarget = 3.254V
 State of Pins: 
 TCK: 0, TDI: 0, TDO: 0, TMS: 1, TRES: 1, TRST: 1
 Hardware-Breakpoints: 6
@@ -135,8 +236,138 @@ Programming Done.
 Verify OK.
 Application running ...
 Build target 'Freq'
+compiling app.c...
+..\App\APP\app.c(172): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "char *restrict"
 linking...
-Program Size: Code=42112 RO-data=1416 RW-data=236 ZI-data=57676  
+Program Size: Code=41804 RO-data=1420 RW-data=236 ZI-data=57676  
+FromELF: creating hex file...
+"..\obj\emWin.axf" - 0 Errors, 1 Warning(s).
+Load "..\\obj\\emWin.axf" 
+Set JLink Project File to "E:\PROJECT\RD15002WV\RD15002WV\Freq\PRO\JLinkSettings.ini"
+* JLink Info: Device "STM32F407VG" selected (1024 KB flash, 128 KB RAM).
+ 
+JLink info:
+------------
+DLL: V4.78j, compiled Nov 22 2013 20:08:33
+Firmware: J-Link ARM V8 compiled Nov  8 2013 12:07:30
+Hardware: V8.00
+S/N : 17935099 
+Feature(s) : RDI,FlashDL,FlashBP,JFlash 
+ 
+* JLink Info: Found SWD-DP with ID 0x2BA01477
+* JLink Info: Found SWD-DP with ID 0x2BA01477
+* JLink Info: Found Cortex-M4 r0p1, Little endian.
+* JLink Info: FPUnit: 6 code (BP) slots and 2 literal slots
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+ROMTableAddr = 0xE00FF003
+ 
+Target info:
+------------
+Device: STM32F407VG
+VTarget = 3.254V
+State of Pins: 
+TCK: 0, TDI: 0, TDO: 0, TMS: 1, TRES: 1, TRST: 1
+Hardware-Breakpoints: 6
+Software-Breakpoints: 8192
+Watchpoints:          4
+JTAG speed: 500 kHz
+ 
+Erase Done.
+Programming Done.
+Verify OK.
+Application running ...
+Build target 'Freq'
+compiling FreqMeasurement.c...
+..\App\APP\FreqMeasurement.c(232): warning:  #177-D: variable "i" was declared but never referenced
+linking...
+Program Size: Code=41804 RO-data=1420 RW-data=236 ZI-data=57676  
+FromELF: creating hex file...
+"..\obj\emWin.axf" - 0 Errors, 1 Warning(s).
+Build target 'Freq'
+linking...
+Program Size: Code=41804 RO-data=1420 RW-data=236 ZI-data=57676  
+FromELF: creating hex file...
+"..\obj\emWin.axf" - 0 Errors, 0 Warning(s).
+Build target 'Freq'
+compiling FreqMeasurement.c...
+..\App\APP\FreqMeasurement.c(232): warning:  #177-D: variable "i" was declared but never referenced
+linking...
+Program Size: Code=41788 RO-data=1420 RW-data=236 ZI-data=57676  
+FromELF: creating hex file...
+"..\obj\emWin.axf" - 0 Errors, 1 Warning(s).
+Build target 'Freq'
+compiling FreqMeasurement.c...
+..\App\APP\FreqMeasurement.c(232): warning:  #177-D: variable "i" was declared but never referenced
+linking...
+Program Size: Code=41788 RO-data=1420 RW-data=236 ZI-data=57676  
+FromELF: creating hex file...
+"..\obj\emWin.axf" - 0 Errors, 1 Warning(s).
+Load "..\\obj\\emWin.axf" 
+Set JLink Project File to "E:\PROJECT\RD15002WV\RD15002WV\Freq\PRO\JLinkSettings.ini"
+* JLink Info: Device "STM32F407VG" selected (1024 KB flash, 128 KB RAM).
+ 
+JLink info:
+------------
+DLL: V4.78j, compiled Nov 22 2013 20:08:33
+Firmware: J-Link ARM V8 compiled Nov  8 2013 12:07:30
+Hardware: V8.00
+S/N : 17935099 
+Feature(s) : RDI,FlashDL,FlashBP,JFlash 
+ 
+* JLink Info: Found SWD-DP with ID 0x2BA01477
+* JLink Info: STM32F2xxx/STM32F4xxx: Can not attach to CPU. Trying connect under reset.
+* JLink Info: Found SWD-DP with ID 0x2BA01477
+Load "..\\obj\\emWin.axf" 
+Set JLink Project File to "E:\PROJECT\RD15002WV\RD15002WV\Freq\PRO\JLinkSettings.ini"
+* JLink Info: Device "STM32F407VG" selected (1024 KB flash, 128 KB RAM).
+ 
+JLink info:
+------------
+DLL: V4.78j, compiled Nov 22 2013 20:08:33
+Firmware: J-Link ARM V8 compiled Nov  8 2013 12:07:30
+Hardware: V8.00
+S/N : 17935099 
+Feature(s) : RDI,FlashDL,FlashBP,JFlash 
+ 
+* JLink Info: Found SWD-DP with ID 0x2BA01477
+* JLink Info: Found SWD-DP with ID 0x2BA01477
+* JLink Info: Found Cortex-M4 r0p1, Little endian.
+* JLink Info: FPUnit: 6 code (BP) slots and 2 literal slots
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+ROMTableAddr = 0xE00FF003
+ 
+Target info:
+------------
+Device: STM32F407VG
+VTarget = 3.254V
+State of Pins: 
+TCK: 0, TDI: 0, TDO: 0, TMS: 1, TRES: 1, TRST: 1
+Hardware-Breakpoints: 6
+Software-Breakpoints: 8192
+Watchpoints:          4
+JTAG speed: 500 kHz
+ 
+Erase Done.
+Programming Done.
+Verify OK.
+Application running ...
+Build target 'Freq'
+compiling FreqMeasurement.c...
+..\App\APP\FreqMeasurement.c(232): warning:  #177-D: variable "i" was declared but never referenced
+linking...
+Program Size: Code=41788 RO-data=1420 RW-data=236 ZI-data=57676  
+FromELF: creating hex file...
+"..\obj\emWin.axf" - 0 Errors, 1 Warning(s).
+Build target 'Freq'
+linking...
+Program Size: Code=41788 RO-data=1420 RW-data=236 ZI-data=57676  
+FromELF: creating hex file...
+"..\obj\emWin.axf" - 0 Errors, 0 Warning(s).
+Build target 'Freq'
+linking...
+Program Size: Code=41788 RO-data=1420 RW-data=236 ZI-data=57676  
 FromELF: creating hex file...
 "..\obj\emWin.axf" - 0 Errors, 0 Warning(s).
 Load "..\\obj\\emWin.axf" 
@@ -162,7 +393,101 @@ ROMTableAddr = 0xE00FF003
 Target info:
 ------------
 Device: STM32F407VG
-VTarget = 3.248V
+VTarget = 3.254V
+State of Pins: 
+TCK: 0, TDI: 0, TDO: 0, TMS: 1, TRES: 1, TRST: 1
+Hardware-Breakpoints: 6
+Software-Breakpoints: 8192
+Watchpoints:          4
+JTAG speed: 500 kHz
+ 
+Erase Done.
+Programming Done.
+Verify OK.
+Application running ...
+Build target 'Freq'
+compiling FreqMeasurement.c...
+..\App\APP\FreqMeasurement.c(232): warning:  #177-D: variable "i" was declared but never referenced
+linking...
+Program Size: Code=41788 RO-data=1420 RW-data=236 ZI-data=57676  
+FromELF: creating hex file...
+"..\obj\emWin.axf" - 0 Errors, 1 Warning(s).
+Build target 'Freq'
+linking...
+Program Size: Code=41788 RO-data=1420 RW-data=236 ZI-data=57676  
+FromELF: creating hex file...
+"..\obj\emWin.axf" - 0 Errors, 0 Warning(s).
+Load "..\\obj\\emWin.axf" 
+Set JLink Project File to "E:\PROJECT\RD15002WV\RD15002WV\Freq\PRO\JLinkSettings.ini"
+* JLink Info: Device "STM32F407VG" selected (1024 KB flash, 128 KB RAM).
+ 
+JLink info:
+------------
+DLL: V4.78j, compiled Nov 22 2013 20:08:33
+Firmware: J-Link ARM V8 compiled Nov  8 2013 12:07:30
+Hardware: V8.00
+S/N : 17935099 
+Feature(s) : RDI,FlashDL,FlashBP,JFlash 
+ 
+* JLink Info: Found SWD-DP with ID 0x2BA01477
+* JLink Info: Found SWD-DP with ID 0x2BA01477
+* JLink Info: Found Cortex-M4 r0p1, Little endian.
+* JLink Info: FPUnit: 6 code (BP) slots and 2 literal slots
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+ROMTableAddr = 0xE00FF003
+ 
+Target info:
+------------
+Device: STM32F407VG
+VTarget = 3.254V
+State of Pins: 
+TCK: 0, TDI: 0, TDO: 0, TMS: 1, TRES: 1, TRST: 1
+Hardware-Breakpoints: 6
+Software-Breakpoints: 8192
+Watchpoints:          4
+JTAG speed: 500 kHz
+ 
+Erase Done.
+Programming Done.
+Verify OK.
+Application running ...
+Build target 'Freq'
+compiling FreqMeasurement.c...
+..\App\APP\FreqMeasurement.c(232): warning:  #177-D: variable "i" was declared but never referenced
+linking...
+Program Size: Code=41788 RO-data=1420 RW-data=236 ZI-data=57676  
+FromELF: creating hex file...
+"..\obj\emWin.axf" - 0 Errors, 1 Warning(s).
+Build target 'Freq'
+linking...
+Program Size: Code=41788 RO-data=1420 RW-data=236 ZI-data=57676  
+FromELF: creating hex file...
+"..\obj\emWin.axf" - 0 Errors, 0 Warning(s).
+Load "..\\obj\\emWin.axf" 
+Set JLink Project File to "E:\PROJECT\RD15002WV\RD15002WV\Freq\PRO\JLinkSettings.ini"
+* JLink Info: Device "STM32F407VG" selected (1024 KB flash, 128 KB RAM).
+ 
+JLink info:
+------------
+DLL: V4.78j, compiled Nov 22 2013 20:08:33
+Firmware: J-Link ARM V8 compiled Nov  8 2013 12:07:30
+Hardware: V8.00
+S/N : 17935099 
+Feature(s) : RDI,FlashDL,FlashBP,JFlash 
+ 
+* JLink Info: Found SWD-DP with ID 0x2BA01477
+* JLink Info: Found SWD-DP with ID 0x2BA01477
+* JLink Info: Found Cortex-M4 r0p1, Little endian.
+* JLink Info: FPUnit: 6 code (BP) slots and 2 literal slots
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+ROMTableAddr = 0xE00FF003
+ 
+Target info:
+------------
+Device: STM32F407VG
+VTarget = 3.254V
 State of Pins: 
 TCK: 0, TDI: 0, TDO: 0, TMS: 1, TRES: 1, TRST: 1
 Hardware-Breakpoints: 6
