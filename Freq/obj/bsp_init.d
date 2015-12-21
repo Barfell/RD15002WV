@@ -56,3 +56,11 @@
 ..\obj\bsp_init.o: ..\App\includes.h
 ..\obj\bsp_init.o: ..\App\APP\FreqMeasurement.h
 ..\obj\bsp_init.o: ..\App\APP\Tools.h
+..\obj\bsp_init.o: ..\Protocol\Protocol\AppMain.h
+..\obj\bsp_init.o: ..\Protocol\sys\kernel.h
+..\obj\bsp_init.o: ..\Protocol\sys\tool.h
+..\obj\bsp_init.o: ..\Protocol\sys\type32.h
+..\obj\bsp_init.o: ..\Protocol\sys\archDef.h
+..\obj\bsp_init.o: ..\Protocol\drv\inc\Protocol.h
+..\obj\bsp_init.o: ..\Protocol\sys\kernel.h
+..\obj\bsp_init.o: ..\Protocol\drv\inc\usart_serial.h

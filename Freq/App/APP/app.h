@@ -16,8 +16,7 @@
 #define  APP_CFG_TASK_START_STK_SIZE                      256u
 #define  APP_CFG_TASK_TASK1_STK_SIZE                      256u
 #define  APP_CFG_TASK_TASK2_STK_SIZE                      256u
-#define  APP_CFG_TASK_TASK3_STK_SIZE                      2024u
-#define  APP_CFG_TASK_TASK4_STK_SIZE                      1024u
+#define  APP_CFG_TASK_TASK3_STK_SIZE                      4096
 
 //任务声明
 void  AppTaskStart 					(void *p_arg);//起始任务（固定的）

@@ -56,3 +56,11 @@
 ..\obj\main.o: ..\App\includes.h
 ..\obj\main.o: ..\App\APP\FreqMeasurement.h
 ..\obj\main.o: ..\App\APP\Tools.h
+..\obj\main.o: ..\Protocol\Protocol\AppMain.h
+..\obj\main.o: ..\Protocol\sys\kernel.h
+..\obj\main.o: ..\Protocol\sys\tool.h
+..\obj\main.o: ..\Protocol\sys\type32.h
+..\obj\main.o: ..\Protocol\sys\archDef.h
+..\obj\main.o: ..\Protocol\drv\inc\Protocol.h
+..\obj\main.o: ..\Protocol\sys\kernel.h
+..\obj\main.o: ..\Protocol\drv\inc\usart_serial.h

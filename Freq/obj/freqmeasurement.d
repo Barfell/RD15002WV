@@ -56,3 +56,11 @@
 ..\obj\freqmeasurement.o: ..\App\includes.h
 ..\obj\freqmeasurement.o: ..\App\APP\FreqMeasurement.h
 ..\obj\freqmeasurement.o: ..\App\APP\Tools.h
+..\obj\freqmeasurement.o: ..\Protocol\Protocol\AppMain.h
+..\obj\freqmeasurement.o: ..\Protocol\sys\kernel.h
+..\obj\freqmeasurement.o: ..\Protocol\sys\tool.h
+..\obj\freqmeasurement.o: ..\Protocol\sys\type32.h
+..\obj\freqmeasurement.o: ..\Protocol\sys\archDef.h
+..\obj\freqmeasurement.o: ..\Protocol\drv\inc\Protocol.h
+..\obj\freqmeasurement.o: ..\Protocol\sys\kernel.h
+..\obj\freqmeasurement.o: ..\Protocol\drv\inc\usart_serial.h

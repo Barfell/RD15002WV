@@ -74,6 +74,7 @@
 #include  "app.h"
 #include  "FreqMeasurement.h"
 #include  "Tools.h"
+#include  "AppMain.h"
 
 /*
 *********************************************************************************************************

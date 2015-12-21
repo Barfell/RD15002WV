@@ -27,27 +27,6 @@ void SetClock(void)
 
 
 
-void read_dev_id(unsigned char* DevID_string)
-{
-	unsigned char DevID_tmp[4] = {'\0'};
-	unsigned char i,IDtemp[12];
-	memset(DevID_string,'\0',50);
-	
-	for(i=0;i<12;i++)
-		{
-			IDtemp[i] = *( (unsigned char*)(0x1fff7a10+i) );
-		}
-		
-		
-		
-	for(i=0;i<12;i++)
-		{
-			hextostr(DevID_tmp,IDtemp[i]);
-			strcat(DevID_string,DevID_tmp);
-			memset(DevID_tmp,'\0',4);
-		}
-}
-
 void wwatch_dog_init(void)
 {
 	RCC_APB1PeriphClockCmd(RCC_APB1Periph_WWDG,ENABLE);
@@ -70,4 +49,25 @@ void iwatch_dog_init(void)
 	IWDG_Enable();
 	
 	//IWDG_ReloadCounter(); //Î¹¹·
+}
+
+void read_dev_id(unsigned char* DevID_string)
+{
+	unsigned char DevID_tmp[4] = {'\0'};
+	unsigned char i,IDtemp[12];
+	memset(DevID_string,'\0',50);
+	
+	for(i=0;i<12;i++)
+		{
+			IDtemp[i] = *( (unsigned char*)(0x1fff7a10+i) );
+		}
+		
+		
+		
+	for(i=0;i<12;i++)
+		{
+			hextostr(DevID_tmp,IDtemp[i]);
+			strcat(DevID_string,DevID_tmp);
+			memset(DevID_tmp,'\0',4);
+		}
 }

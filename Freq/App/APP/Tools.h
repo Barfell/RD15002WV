@@ -14,13 +14,7 @@
 #define min(a, b)				(((a) < (b)) ? (a) : (b))
 
 
-#define START_SYMBOL		0XFE
-#define PROTOCOL_EDITION	0X01
-#define DATA_DIRECTION		0X01
-#define	MAINCMD_INTERNET 	0X06
-#define	SUBCMD_SENSOR	 	0X0001
-#define	FIRST_END_SYMBOL	 		0X0D
-#define	SECOND_END_SYMBOL	 		0X0A
+
 enum
 {
 	NENCRYPTION_NCOMPRESSION = 0X00,
@@ -32,11 +26,8 @@ enum
 
 void hextostr(unsigned char *str ,unsigned char hex);
 
-
+unsigned int SoftGenCrc32(unsigned int* puData, unsigned int uSize);
 unsigned int HardGenCrc32(unsigned int* puData, unsigned int uSize);
-
-
-void HandleDataPackage(unsigned char *pBuf);
 
 
 #endif

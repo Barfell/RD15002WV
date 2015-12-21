@@ -17,8 +17,8 @@ char* get_time(void)
 //				{printf("External Reset occurred\r\n");}
 			RTC_GetTime(RTC_Format_BIN, &RTC_GetTimeStructure);
 			RTC_GetDate(RTC_Format_BIN, &RTC_GetDateStructure);
-			
-			sprintf(time,"%d/%d/%d %d:%d:%d",\
+			//2015-11-10-10:18:33
+			sprintf(time,"20%d-%d-%d-%d:%d:%d",\
 			RTC_GetDateStructure.RTC_Year,RTC_GetDateStructure.RTC_Month,\
 			RTC_GetDateStructure.RTC_Date,RTC_GetTimeStructure.RTC_Hours,\
 			RTC_GetTimeStructure.RTC_Minutes,RTC_GetTimeStructure.RTC_Seconds);

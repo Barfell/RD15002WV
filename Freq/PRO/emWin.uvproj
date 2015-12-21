@@ -351,7 +351,7 @@
               <MiscControls></MiscControls>
               <Define>USE_STDPERIPH_DRIVER,STM32F4XX</Define>
               <Undefine></Undefine>
-              <IncludePath>..\App;..\App\BSP;..\LIB\INC;..\LIB\SRC;..\emWin\Config;..\emWin\inc;..\emWin\Lib;..\uCOSIII\uC-CPU;..\uCOSIII\uC-LIB;..\uCOSIII\uC-Serial\Driver;..\uCOSIII\uC-Serial\Line;..\uCOSIII\uC-Serial\Source;..\uCOSIII\uC-Serial\OS;..\uCOSIII\uCOS-III\Ports;..\uCOSIII\uCOS-III\Source;..\emWin\Demo;..\App\APP</IncludePath>
+              <IncludePath>..\App;..\App\BSP;..\LIB\INC;..\LIB\SRC;..\emWin\Config;..\emWin\inc;..\emWin\Lib;..\uCOSIII\uC-CPU;..\uCOSIII\uC-LIB;..\uCOSIII\uC-Serial\Driver;..\uCOSIII\uC-Serial\Line;..\uCOSIII\uC-Serial\Source;..\uCOSIII\uC-Serial\OS;..\uCOSIII\uCOS-III\Ports;..\uCOSIII\uCOS-III\Source;..\emWin\Demo;..\App\APP;..\Protocol\drv\inc;..\Protocol\drv\src;..\Protocol\Protocol;..\Protocol\sys</IncludePath>
             </VariousControls>
           </Cads>
           <Aads>
@@ -836,6 +836,41 @@
               <FileName>lib_str.h</FileName>
               <FileType>5</FileType>
               <FilePath>..\uCOSIII\uC-LIB\lib_str.h</FilePath>
+            </File>
+          </Files>
+        </Group>
+        <Group>
+          <GroupName>Protocol</GroupName>
+          <Files>
+            <File>
+              <FileName>AppMain.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\Protocol\Protocol\AppMain.c</FilePath>
+            </File>
+          </Files>
+        </Group>
+        <Group>
+          <GroupName>drv</GroupName>
+          <Files>
+            <File>
+              <FileName>Protocol.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\Protocol\drv\src\Protocol.c</FilePath>
+            </File>
+            <File>
+              <FileName>usart_serial.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\Protocol\drv\src\usart_serial.c</FilePath>
+            </File>
+          </Files>
+        </Group>
+        <Group>
+          <GroupName>sys</GroupName>
+          <Files>
+            <File>
+              <FileName>kernel.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\Protocol\sys\kernel.c</FilePath>
             </File>
           </Files>
         </Group>

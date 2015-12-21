@@ -246,39 +246,41 @@ void EXTI9_5_IRQHandler(void)
 
 
 
-void USART3_IRQHandler(void)
-{
-	unsigned char 	RXData        = 0;
-	OSIntEnter();
-	
-	if (USART_GetFlagStatus(USART3, USART_FLAG_RXNE) != RESET)
-    {
-		USART_ClearFlag(USART3, USART_FLAG_RXNE);
-		RXData = USART_ReceiveData(USART3);
+//void USART3_IRQHandler(void)
+//{
+//	unsigned char 	RXData        = 0;
+//	OSIntEnter();
+//	
+//	if (USART_GetFlagStatus(USART3, USART_FLAG_RXNE) != RESET)
+//    {
+//		USART_ClearFlag(USART3, USART_FLAG_RXNE);
+//		RXData = USART_ReceiveData(USART3);
 
-		if(IsCMDflag == 1)//确认是命令
-		{
-			Reciv[RecivNum] = RXData;
-			if(Reciv[11] == '3' && RecivNum == 11)//第11位是1
-				{UploadFlag = 1; RecivNum=0; IsCMDflag = 0;}
-			else if(RecivNum == 11)
-				{RecivNum = 0; IsCMDflag = 0;}
-			else
-				{RecivNum++;}
-		}
-		
-		
-		if(IsCMDflag == 0)//未确认是命令之前
-		{
-			if(RXData=='T' && RecivNum == 2 )	  //第3位是 "T"
-				{Reciv[RecivNum] = RXData; IsCMDflag = 1; RecivNum++; }
-			else if(RXData=='C' && RecivNum == 1 )//第2位是 "C"
-				{Reciv[RecivNum] = RXData;  RecivNum++; }
-			else if(RXData=='S' && RecivNum == 0 )//第一位是"S"
-				{Reciv[RecivNum] = RXData;  RecivNum++; }
-			else
-				{RecivNum=0;IsCMDflag = 0;}
-		}
-	}	   	
-	OSIntExit();
-}
+//		if(IsCMDflag == 1)//确认是命令
+//		{
+//			Reciv[RecivNum] = RXData;
+//			if(Reciv[11] == '3' && RecivNum == 11)//第11位是1
+//				{UploadFlag = 1; RecivNum=0; IsCMDflag = 0;}
+//			else if(RecivNum == 11)
+//				{RecivNum = 0; IsCMDflag = 0;}
+//			else
+//				{RecivNum++;}
+//		}
+//		
+//		
+//		if(IsCMDflag == 0)//未确认是命令之前
+//		{
+//			if(RXData=='T' && RecivNum == 2 )	  //第3位是 "T"
+//				{Reciv[RecivNum] = RXData; IsCMDflag = 1; RecivNum++; }
+//			else if(RXData=='C' && RecivNum == 1 )//第2位是 "C"
+//				{Reciv[RecivNum] = RXData;  RecivNum++; }
+//			else if(RXData=='S' && RecivNum == 0 )//第一位是"S"
+//				{Reciv[RecivNum] = RXData;  RecivNum++; }
+//			else
+//				{RecivNum=0;IsCMDflag = 0;}
+//		}
+//	}	   	
+//	OSIntExit();
+//}
+
+

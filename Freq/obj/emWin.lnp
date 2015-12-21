@@ -59,6 +59,10 @@
 "..\obj\lib_mem.o"
 "..\obj\lib_mem_a.o"
 "..\obj\lib_str.o"
+"..\obj\appmain.o"
+"..\obj\protocol.o"
+"..\obj\usart_serial.o"
+"..\obj\kernel.o"
 --library_type=microlib --strict --scatter "..\obj\emWin.sct"
 --summary_stderr --info summarysizes --map --xref --callgraph --symbols
 --info sizes --info totals --info unused --info veneers
