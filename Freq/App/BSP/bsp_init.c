@@ -3,7 +3,7 @@
 //时钟初始化
 void SetClock(void)
 {
-	ErrorStatus HSEStartUpStatus;
+	ErrorStatus HSEStartUpStatus = SUCCESS;
 	RCC_DeInit();			    
 	RCC_HSEConfig(RCC_HSE_ON);	
 	//等待HSE稳定
@@ -26,27 +26,6 @@ void SetClock(void)
 }
 
 
-
-void read_dev_id(unsigned char* DevID_string)
-{
-	unsigned char DevID_tmp[4] = {'\0'};
-	unsigned char i,IDtemp[12];
-	memset(DevID_string,'\0',50);
-	
-	for(i=0;i<12;i++)
-		{
-			IDtemp[i] = *( (unsigned char*)(0x1fff7a10+i) );
-		}
-		
-		
-		
-	for(i=0;i<12;i++)
-		{
-			hextostr(DevID_tmp,IDtemp[i]);
-			strcat(DevID_string,DevID_tmp);
-			memset(DevID_tmp,'\0',4);
-		}
-}
 
 void wwatch_dog_init(void)
 {
@@ -71,3 +50,25 @@ void iwatch_dog_init(void)
 	
 	//IWDG_ReloadCounter(); //喂狗
 }
+
+void read_dev_id(unsigned char* DevID_string)
+{
+	unsigned char DevID_tmp[4] = {'\0'};
+	unsigned char i,IDtemp[12];
+	memset(DevID_string,'\0',50);
+	
+	for(i=0;i<12;i++)
+		{
+			IDtemp[i] = *( (unsigned char*)(0x1fff7a10+i) );
+		}
+		
+		
+		
+	for(i=0;i<12;i++)
+		{
+			hextostr(DevID_tmp,IDtemp[i]);
+			strcat((char *)DevID_string,(char *)DevID_tmp);
+			memset(DevID_tmp,'\0',4);
+		}
+}
+

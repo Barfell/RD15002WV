@@ -246,39 +246,14 @@ void EXTI9_5_IRQHandler(void)
 
 
 
-void USART3_IRQHandler(void)
+void RTC_Alarm_IRQHandler(void)
 {
-	unsigned char 	RXData        = 0;
-	OSIntEnter();
-	
-	if (USART_GetFlagStatus(USART3, USART_FLAG_RXNE) != RESET)
-    {
-		USART_ClearFlag(USART3, USART_FLAG_RXNE);
-		RXData = USART_ReceiveData(USART3);
-
-		if(IsCMDflag == 1)//确认是命令
-		{
-			Reciv[RecivNum] = RXData;
-			if(Reciv[11] == '3' && RecivNum == 11)//第11位是1
-				{UploadFlag = 1; RecivNum=0; IsCMDflag = 0;}
-			else if(RecivNum == 11)
-				{RecivNum = 0; IsCMDflag = 0;}
-			else
-				{RecivNum++;}
-		}
-		
-		
-		if(IsCMDflag == 0)//未确认是命令之前
-		{
-			if(RXData=='T' && RecivNum == 2 )	  //第3位是 "T"
-				{Reciv[RecivNum] = RXData; IsCMDflag = 1; RecivNum++; }
-			else if(RXData=='C' && RecivNum == 1 )//第2位是 "C"
-				{Reciv[RecivNum] = RXData;  RecivNum++; }
-			else if(RXData=='S' && RecivNum == 0 )//第一位是"S"
-				{Reciv[RecivNum] = RXData;  RecivNum++; }
-			else
-				{RecivNum=0;IsCMDflag = 0;}
-		}
-	}	   	
-	OSIntExit();
+  if(RTC_GetITStatus(RTC_IT_ALRA) != RESET)
+  {
+	 // printf("alarm on\r\n");
+    printf("alarm %s\r\n",get_time());
+			set_alarm(0,1,0);
+    RTC_ClearITPendingBit(RTC_IT_ALRA);
+    EXTI_ClearITPendingBit(EXTI_Line17);
+  } 
 }

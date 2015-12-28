@@ -53,3 +53,4 @@ double get_dev_voltage(unsigned int value)
 	dev_voltage = dev_voltage/x;
 	return dev_voltage;
 }
+

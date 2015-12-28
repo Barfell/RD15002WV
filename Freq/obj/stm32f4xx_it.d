@@ -52,8 +52,16 @@
 ..\obj\stm32f4xx_it.o: ..\App\BSP\bsp_sst25vf064.h
 ..\obj\stm32f4xx_it.o: ..\App\BSP\bsp_rtc.h
 ..\obj\stm32f4xx_it.o: ..\App\BSP\bsp_io_control.h
-..\obj\stm32f4xx_it.o: ..\App\BSP\bsp_485.h
+..\obj\stm32f4xx_it.o: ..\App\BSP\bsp_adc.h
 ..\obj\stm32f4xx_it.o: ..\App\APP\app.h
 ..\obj\stm32f4xx_it.o: ..\App\includes.h
 ..\obj\stm32f4xx_it.o: ..\App\APP\FreqMeasurement.h
 ..\obj\stm32f4xx_it.o: ..\App\APP\Tools.h
+..\obj\stm32f4xx_it.o: ..\Protocol\Protocol\AppMain.h
+..\obj\stm32f4xx_it.o: ..\Protocol\sys\kernel.h
+..\obj\stm32f4xx_it.o: ..\Protocol\sys\tool.h
+..\obj\stm32f4xx_it.o: ..\Protocol\sys\type32.h
+..\obj\stm32f4xx_it.o: ..\Protocol\sys\archDef.h
+..\obj\stm32f4xx_it.o: ..\Protocol\drv\inc\Protocol.h
+..\obj\stm32f4xx_it.o: ..\Protocol\sys\kernel.h
+..\obj\stm32f4xx_it.o: ..\Protocol\drv\inc\usart_serial.h

@@ -51,8 +51,16 @@
 ..\obj\bsp_sst25vf064.o: ..\App\BSP\bsp_sst25vf064.h
 ..\obj\bsp_sst25vf064.o: ..\App\BSP\bsp_rtc.h
 ..\obj\bsp_sst25vf064.o: ..\App\BSP\bsp_io_control.h
-..\obj\bsp_sst25vf064.o: ..\App\BSP\bsp_485.h
+..\obj\bsp_sst25vf064.o: ..\App\BSP\bsp_adc.h
 ..\obj\bsp_sst25vf064.o: ..\App\APP\app.h
 ..\obj\bsp_sst25vf064.o: ..\App\includes.h
 ..\obj\bsp_sst25vf064.o: ..\App\APP\FreqMeasurement.h
 ..\obj\bsp_sst25vf064.o: ..\App\APP\Tools.h
+..\obj\bsp_sst25vf064.o: ..\Protocol\Protocol\AppMain.h
+..\obj\bsp_sst25vf064.o: ..\Protocol\sys\kernel.h
+..\obj\bsp_sst25vf064.o: ..\Protocol\sys\tool.h
+..\obj\bsp_sst25vf064.o: ..\Protocol\sys\type32.h
+..\obj\bsp_sst25vf064.o: ..\Protocol\sys\archDef.h
+..\obj\bsp_sst25vf064.o: ..\Protocol\drv\inc\Protocol.h
+..\obj\bsp_sst25vf064.o: ..\Protocol\sys\kernel.h
+..\obj\bsp_sst25vf064.o: ..\Protocol\drv\inc\usart_serial.h

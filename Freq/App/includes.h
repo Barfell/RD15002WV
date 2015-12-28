@@ -68,12 +68,13 @@
 #include  "bsp_sst25vf064.h"
 #include  "bsp_rtc.h"
 #include  "bsp_io_control.h"
-#include  "bsp_485.h"
+#include  "bsp_adc.h"
 
 /*------app-----------*/
 #include  "app.h"
 #include  "FreqMeasurement.h"
 #include  "Tools.h"
+#include  "AppMain.h"
 
 /*
 *********************************************************************************************************

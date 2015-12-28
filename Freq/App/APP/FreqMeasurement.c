@@ -229,12 +229,9 @@ void TranPulse(unsigned int freq,unsigned char num)
 double GetFreq(unsigned char ch)
 {
 	unsigned int f = 0;
-	unsigned char i = 0;
 	unsigned char times = 0;
 	OS_ERR		err;
 	SW_VW(ch);//选择通道
-	
-	
 	SW_VW_TRCN(0);//tran
 	//OSTimeDlyHMSM(0,0,0,20,OS_OPT_TIME_DLY,&err);
 	
@@ -252,6 +249,8 @@ double GetFreq(unsigned char ch)
 	OSTimeDlyHMSM(0,0,0,20,OS_OPT_TIME_DLY,&err);//停顿，等待激励脉冲消除
 	return Measure();
 }
+
+
 
 double Measure(void)
 {

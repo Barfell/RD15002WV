@@ -51,8 +51,16 @@
 ..\obj\tools.o: ..\App\BSP\bsp_sst25vf064.h
 ..\obj\tools.o: ..\App\BSP\bsp_rtc.h
 ..\obj\tools.o: ..\App\BSP\bsp_io_control.h
-..\obj\tools.o: ..\App\BSP\bsp_485.h
+..\obj\tools.o: ..\App\BSP\bsp_adc.h
 ..\obj\tools.o: ..\App\APP\app.h
 ..\obj\tools.o: ..\App\includes.h
 ..\obj\tools.o: ..\App\APP\FreqMeasurement.h
 ..\obj\tools.o: ..\App\APP\Tools.h
+..\obj\tools.o: ..\Protocol\Protocol\AppMain.h
+..\obj\tools.o: ..\Protocol\sys\kernel.h
+..\obj\tools.o: ..\Protocol\sys\tool.h
+..\obj\tools.o: ..\Protocol\sys\type32.h
+..\obj\tools.o: ..\Protocol\sys\archDef.h
+..\obj\tools.o: ..\Protocol\drv\inc\Protocol.h
+..\obj\tools.o: ..\Protocol\sys\kernel.h
+..\obj\tools.o: ..\Protocol\drv\inc\usart_serial.h
