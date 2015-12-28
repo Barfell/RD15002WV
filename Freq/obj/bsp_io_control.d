@@ -52,6 +52,7 @@
 ..\obj\bsp_io_control.o: ..\App\BSP\bsp_rtc.h
 ..\obj\bsp_io_control.o: ..\App\BSP\bsp_io_control.h
 ..\obj\bsp_io_control.o: ..\App\BSP\bsp_485.h
+..\obj\bsp_io_control.o: ..\App\BSP\flash.h
 ..\obj\bsp_io_control.o: ..\App\APP\app.h
 ..\obj\bsp_io_control.o: ..\App\includes.h
 ..\obj\bsp_io_control.o: ..\App\APP\FreqMeasurement.h

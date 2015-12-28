@@ -9,7 +9,10 @@ unsigned char finishflag = 0;//主机下发命令结束标志
 
 VOID USART3_IRQHandler(VOID)
 { 
-	U8 u8Value;
+	U8 u8Value = 0;
+	
+	OSIntEnter();//进入中断
+	
 	/* 串口1接收中断处理 */
   	if(USART_GetITStatus(USART3, USART_IT_RXNE) != RESET)
   	{ 
@@ -21,6 +24,8 @@ VOID USART3_IRQHandler(VOID)
 		{finishflag = 1;}
   	}
 	preData = u8Value;//记录上一次的数据
+	OSIntExit();//退出中断--ucosiii
+	
 }
 
 U32 GetUartReceiveTime(USART_TypeDef* USARTx)

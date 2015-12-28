@@ -53,6 +53,7 @@
 ..\obj\stm32f4xx_it.o: ..\App\BSP\bsp_rtc.h
 ..\obj\stm32f4xx_it.o: ..\App\BSP\bsp_io_control.h
 ..\obj\stm32f4xx_it.o: ..\App\BSP\bsp_485.h
+..\obj\stm32f4xx_it.o: ..\App\BSP\flash.h
 ..\obj\stm32f4xx_it.o: ..\App\APP\app.h
 ..\obj\stm32f4xx_it.o: ..\App\includes.h
 ..\obj\stm32f4xx_it.o: ..\App\APP\FreqMeasurement.h

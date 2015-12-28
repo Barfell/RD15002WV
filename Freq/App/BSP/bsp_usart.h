@@ -3,6 +3,7 @@
 #include <stdio.h>
 void UsartConfig(void);
 void ConfigPINToListen(void);
+void sentusartdata(char *dat);
 #endif
 
 

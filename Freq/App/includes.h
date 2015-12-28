@@ -69,6 +69,7 @@
 #include  "bsp_rtc.h"
 #include  "bsp_io_control.h"
 #include  "bsp_485.h"
+#include  "flash.h"
 
 /*------app-----------*/
 #include  "app.h"

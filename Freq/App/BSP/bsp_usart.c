@@ -141,3 +141,14 @@ int fputc(int ch, FILE *f)
   	return ch;
 }
 
+//·¢ËÍÒ»×é×Ö·û´®
+void sentusartdata(char *dat)
+{
+	while(*dat != '\0')
+		{
+			USART_SendData(USART3, *dat);
+			while (USART_GetFlagStatus(USART3, USART_FLAG_TC) == RESET);
+			dat++;
+		}
+}
+

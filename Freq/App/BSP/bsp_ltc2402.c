@@ -92,7 +92,7 @@ void LTC2402Init(void)
 //获取电阻值
 double LTC2402_GetResistance(unsigned char channel)
 {
-    unsigned char u8charresbuf[4];
+    unsigned char u8charresbuf[4] ={'\0'};
     unsigned char EOC = 0;
     u32 u32resbuf = 0;
     double convertionresult = 0;

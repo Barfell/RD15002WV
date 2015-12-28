@@ -229,14 +229,12 @@ void TranPulse(unsigned int freq,unsigned char num)
 double GetFreq(unsigned char ch)
 {
 	unsigned int f = 0;
-	unsigned char i = 0;
 	unsigned char times = 0;
 	OS_ERR		err;
 	SW_VW(ch);//Ñ¡ÔñÍ¨µÀ
 	
 	
 	SW_VW_TRCN(0);//tran
-	//OSTimeDlyHMSM(0,0,0,20,OS_OPT_TIME_DLY,&err);
 	
 		for(f = 400;f<8400;f+=100)
 		{

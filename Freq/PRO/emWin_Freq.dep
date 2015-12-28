@@ -1,6 +1,6 @@
 Dependencies for Project 'emWin', Target 'Freq': (DO NOT MODIFY !)
-F (..\App\bsp.c)(0x5640B602)(-c --cpu Cortex-M4 -D__MICROLIB -g -O2 --apcs=interwork -I..\App -I..\App\BSP -I..\LIB\INC -I..\LIB\SRC -I..\emWin\Config -I..\emWin\inc -I..\emWin\Lib -I..\uCOSIII\uC-CPU -I..\uCOSIII\uC-LIB -I..\uCOSIII\uC-Serial\Driver -I..\uCOSIII\uC-Serial\Line -I..\uCOSIII\uC-Serial\Source -I..\uCOSIII\uC-Serial\OS -I..\uCOSIII\uCOS-III\Ports -I..\uCOSIII\uCOS-III\Source -I..\emWin\Demo -I..\App\APP -I..\Protocol\drv\inc -I..\Protocol\drv\src -I..\Protocol\Protocol -I..\Protocol\sys-I "D:\Program Files\mdk\ARM\RV31\INC"-I "D:\Program Files\mdk\ARM\CMSIS\Include"-I "D:\Program Files\mdk\ARM\Inc\ST\STM32F4xx"-DUSE_STDPERIPH_DRIVER -DSTM32F4XX -DSTM32F40_41xxx-o ..\obj\bsp.o --omf_browse ..\obj\bsp.crf --depend ..\obj\bsp.d)
-I (E:\PROJECT\RD15002WV\RD15002WV\Freq\App\includes.h)(0x5673AEE5)
+F (..\App\bsp.c)(0x5673C2B4)(-c --cpu Cortex-M4 -D__MICROLIB -g -O2 --apcs=interwork -I..\App -I..\App\BSP -I..\LIB\INC -I..\LIB\SRC -I..\emWin\Config -I..\emWin\inc -I..\emWin\Lib -I..\uCOSIII\uC-CPU -I..\uCOSIII\uC-LIB -I..\uCOSIII\uC-Serial\Driver -I..\uCOSIII\uC-Serial\Line -I..\uCOSIII\uC-Serial\Source -I..\uCOSIII\uC-Serial\OS -I..\uCOSIII\uCOS-III\Ports -I..\uCOSIII\uCOS-III\Source -I..\emWin\Demo -I..\App\APP -I..\Protocol\drv\inc -I..\Protocol\drv\src -I..\Protocol\Protocol -I..\Protocol\sys-I "D:\Program Files\mdk\ARM\RV31\INC"-I "D:\Program Files\mdk\ARM\CMSIS\Include"-I "D:\Program Files\mdk\ARM\Inc\ST\STM32F4xx"-DUSE_STDPERIPH_DRIVER -DSTM32F4XX -DSTM32F40_41xxx-o ..\obj\bsp.o --omf_browse ..\obj\bsp.crf --depend ..\obj\bsp.d)
+I (E:\PROJECT\RD15002WV\RD15002WV\Freq\App\includes.h)(0x567E821B)
 I (D:\Program Files\mdk\ARM\ARMCC\include\stdarg.h)(0x51C7B744)
 I (D:\Program Files\mdk\ARM\ARMCC\include\stdio.h)(0x51C7B744)
 I (D:\Program Files\mdk\ARM\ARMCC\include\stdlib.h)(0x51C7B744)
@@ -44,14 +44,15 @@ I (E:\PROJECT\RD15002WV\RD15002WV\Freq\LIB\INC\stm32f4xx_usart.h)(0x5640B602)
 I (E:\PROJECT\RD15002WV\RD15002WV\Freq\LIB\INC\stm32f4xx_wwdg.h)(0x5640B602)
 I (E:\PROJECT\RD15002WV\RD15002WV\Freq\LIB\INC\misc.h)(0x5640B602)
 I (E:\PROJECT\RD15002WV\RD15002WV\Freq\App\bsp.h)(0x5640B602)
-I (E:\PROJECT\RD15002WV\RD15002WV\Freq\App\BSP\bsp_init.h)(0x5673ADCE)
-I (E:\PROJECT\RD15002WV\RD15002WV\Freq\App\BSP\bsp_usart.h)(0x5640B602)
+I (E:\PROJECT\RD15002WV\RD15002WV\Freq\App\BSP\bsp_init.h)(0x5673C598)
+I (E:\PROJECT\RD15002WV\RD15002WV\Freq\App\BSP\bsp_usart.h)(0x567EAC78)
 I (E:\PROJECT\RD15002WV\RD15002WV\Freq\App\BSP\bsp_ltc2402.h)(0x564444FE)
 I (E:\PROJECT\RD15002WV\RD15002WV\Freq\App\BSP\bsp_sst25vf064.h)(0x5640B602)
-I (E:\PROJECT\RD15002WV\RD15002WV\Freq\App\BSP\bsp_rtc.h)(0x5640B602)
-I (E:\PROJECT\RD15002WV\RD15002WV\Freq\App\BSP\bsp_io_control.h)(0x5640B602)
+I (E:\PROJECT\RD15002WV\RD15002WV\Freq\App\BSP\bsp_rtc.h)(0x567E5101)
+I (E:\PROJECT\RD15002WV\RD15002WV\Freq\App\BSP\bsp_io_control.h)(0x567E87F1)
 I (E:\PROJECT\RD15002WV\RD15002WV\Freq\App\BSP\bsp_485.h)(0x56455136)
-I (E:\PROJECT\RD15002WV\RD15002WV\Freq\App\APP\app.h)(0x5673BC5A)
+I (E:\PROJECT\RD15002WV\RD15002WV\Freq\App\BSP\flash.h)(0x557F714A)
+I (E:\PROJECT\RD15002WV\RD15002WV\Freq\App\APP\app.h)(0x567EA5DB)
 I (E:\PROJECT\RD15002WV\RD15002WV\Freq\App\APP\FreqMeasurement.h)(0x5640B602)
 I (E:\PROJECT\RD15002WV\RD15002WV\Freq\App\APP\Tools.h)(0x5673AE1E)
 I (E:\PROJECT\RD15002WV\RD15002WV\Freq\Protocol\Protocol\AppMain.h)(0x56415017)
@@ -59,10 +60,10 @@ I (E:\PROJECT\RD15002WV\RD15002WV\Freq\Protocol\sys\kernel.h)(0x5673A8F5)
 I (E:\PROJECT\RD15002WV\RD15002WV\Freq\Protocol\sys\tool.h)(0x55705E61)
 I (E:\PROJECT\RD15002WV\RD15002WV\Freq\Protocol\sys\type32.h)(0x5571477F)
 I (E:\PROJECT\RD15002WV\RD15002WV\Freq\Protocol\sys\archDef.h)(0x4E979D2D)
-I (E:\PROJECT\RD15002WV\RD15002WV\Freq\Protocol\drv\inc\Protocol.h)(0x5673AB66)
-I (E:\PROJECT\RD15002WV\RD15002WV\Freq\Protocol\drv\inc\usart_serial.h)(0x5673AB36)
+I (E:\PROJECT\RD15002WV\RD15002WV\Freq\Protocol\drv\inc\Protocol.h)(0x5673C452)
+I (E:\PROJECT\RD15002WV\RD15002WV\Freq\Protocol\drv\inc\usart_serial.h)(0x5673C41A)
 F (..\App\main.c)(0x5640B602)(-c --cpu Cortex-M4 -D__MICROLIB -g -O2 --apcs=interwork -I..\App -I..\App\BSP -I..\LIB\INC -I..\LIB\SRC -I..\emWin\Config -I..\emWin\inc -I..\emWin\Lib -I..\uCOSIII\uC-CPU -I..\uCOSIII\uC-LIB -I..\uCOSIII\uC-Serial\Driver -I..\uCOSIII\uC-Serial\Line -I..\uCOSIII\uC-Serial\Source -I..\uCOSIII\uC-Serial\OS -I..\uCOSIII\uCOS-III\Ports -I..\uCOSIII\uCOS-III\Source -I..\emWin\Demo -I..\App\APP -I..\Protocol\drv\inc -I..\Protocol\drv\src -I..\Protocol\Protocol -I..\Protocol\sys-I "D:\Program Files\mdk\ARM\RV31\INC"-I "D:\Program Files\mdk\ARM\CMSIS\Include"-I "D:\Program Files\mdk\ARM\Inc\ST\STM32F4xx"-DUSE_STDPERIPH_DRIVER -DSTM32F4XX -DSTM32F40_41xxx-o ..\obj\main.o --omf_browse ..\obj\main.crf --depend ..\obj\main.d)
-I (E:\PROJECT\RD15002WV\RD15002WV\Freq\App\includes.h)(0x5673AEE5)
+I (E:\PROJECT\RD15002WV\RD15002WV\Freq\App\includes.h)(0x567E821B)
 I (D:\Program Files\mdk\ARM\ARMCC\include\stdarg.h)(0x51C7B744)
 I (D:\Program Files\mdk\ARM\ARMCC\include\stdio.h)(0x51C7B744)
 I (D:\Program Files\mdk\ARM\ARMCC\include\stdlib.h)(0x51C7B744)
@@ -106,14 +107,15 @@ I (E:\PROJECT\RD15002WV\RD15002WV\Freq\LIB\INC\stm32f4xx_usart.h)(0x5640B602)
 I (E:\PROJECT\RD15002WV\RD15002WV\Freq\LIB\INC\stm32f4xx_wwdg.h)(0x5640B602)
 I (E:\PROJECT\RD15002WV\RD15002WV\Freq\LIB\INC\misc.h)(0x5640B602)
 I (E:\PROJECT\RD15002WV\RD15002WV\Freq\App\bsp.h)(0x5640B602)
-I (E:\PROJECT\RD15002WV\RD15002WV\Freq\App\BSP\bsp_init.h)(0x5673ADCE)
-I (E:\PROJECT\RD15002WV\RD15002WV\Freq\App\BSP\bsp_usart.h)(0x5640B602)
+I (E:\PROJECT\RD15002WV\RD15002WV\Freq\App\BSP\bsp_init.h)(0x5673C598)
+I (E:\PROJECT\RD15002WV\RD15002WV\Freq\App\BSP\bsp_usart.h)(0x567EAC78)
 I (E:\PROJECT\RD15002WV\RD15002WV\Freq\App\BSP\bsp_ltc2402.h)(0x564444FE)
 I (E:\PROJECT\RD15002WV\RD15002WV\Freq\App\BSP\bsp_sst25vf064.h)(0x5640B602)
-I (E:\PROJECT\RD15002WV\RD15002WV\Freq\App\BSP\bsp_rtc.h)(0x5640B602)
-I (E:\PROJECT\RD15002WV\RD15002WV\Freq\App\BSP\bsp_io_control.h)(0x5640B602)
+I (E:\PROJECT\RD15002WV\RD15002WV\Freq\App\BSP\bsp_rtc.h)(0x567E5101)
+I (E:\PROJECT\RD15002WV\RD15002WV\Freq\App\BSP\bsp_io_control.h)(0x567E87F1)
 I (E:\PROJECT\RD15002WV\RD15002WV\Freq\App\BSP\bsp_485.h)(0x56455136)
-I (E:\PROJECT\RD15002WV\RD15002WV\Freq\App\APP\app.h)(0x5673BC5A)
+I (E:\PROJECT\RD15002WV\RD15002WV\Freq\App\BSP\flash.h)(0x557F714A)
+I (E:\PROJECT\RD15002WV\RD15002WV\Freq\App\APP\app.h)(0x567EA5DB)
 I (E:\PROJECT\RD15002WV\RD15002WV\Freq\App\APP\FreqMeasurement.h)(0x5640B602)
 I (E:\PROJECT\RD15002WV\RD15002WV\Freq\App\APP\Tools.h)(0x5673AE1E)
 I (E:\PROJECT\RD15002WV\RD15002WV\Freq\Protocol\Protocol\AppMain.h)(0x56415017)
@@ -121,8 +123,8 @@ I (E:\PROJECT\RD15002WV\RD15002WV\Freq\Protocol\sys\kernel.h)(0x5673A8F5)
 I (E:\PROJECT\RD15002WV\RD15002WV\Freq\Protocol\sys\tool.h)(0x55705E61)
 I (E:\PROJECT\RD15002WV\RD15002WV\Freq\Protocol\sys\type32.h)(0x5571477F)
 I (E:\PROJECT\RD15002WV\RD15002WV\Freq\Protocol\sys\archDef.h)(0x4E979D2D)
-I (E:\PROJECT\RD15002WV\RD15002WV\Freq\Protocol\drv\inc\Protocol.h)(0x5673AB66)
-I (E:\PROJECT\RD15002WV\RD15002WV\Freq\Protocol\drv\inc\usart_serial.h)(0x5673AB36)
+I (E:\PROJECT\RD15002WV\RD15002WV\Freq\Protocol\drv\inc\Protocol.h)(0x5673C452)
+I (E:\PROJECT\RD15002WV\RD15002WV\Freq\Protocol\drv\inc\usart_serial.h)(0x5673C41A)
 F (..\App\os_app_hooks.c)(0x5640B602)(-c --cpu Cortex-M4 -D__MICROLIB -g -O2 --apcs=interwork -I..\App -I..\App\BSP -I..\LIB\INC -I..\LIB\SRC -I..\emWin\Config -I..\emWin\inc -I..\emWin\Lib -I..\uCOSIII\uC-CPU -I..\uCOSIII\uC-LIB -I..\uCOSIII\uC-Serial\Driver -I..\uCOSIII\uC-Serial\Line -I..\uCOSIII\uC-Serial\Source -I..\uCOSIII\uC-Serial\OS -I..\uCOSIII\uCOS-III\Ports -I..\uCOSIII\uCOS-III\Source -I..\emWin\Demo -I..\App\APP -I..\Protocol\drv\inc -I..\Protocol\drv\src -I..\Protocol\Protocol -I..\Protocol\sys-I "D:\Program Files\mdk\ARM\RV31\INC"-I "D:\Program Files\mdk\ARM\CMSIS\Include"-I "D:\Program Files\mdk\ARM\Inc\ST\STM32F4xx"-DUSE_STDPERIPH_DRIVER -DSTM32F4XX -DSTM32F40_41xxx-o ..\obj\os_app_hooks.o --omf_browse ..\obj\os_app_hooks.crf --depend ..\obj\os_app_hooks.d)
 I (E:\PROJECT\RD15002WV\RD15002WV\Freq\uCOSIII\uCOS-III\Source\os.h)(0x5640B602)
 I (E:\PROJECT\RD15002WV\RD15002WV\Freq\App\os_cfg.h)(0x5640B602)
@@ -140,13 +142,13 @@ I (E:\PROJECT\RD15002WV\RD15002WV\Freq\uCOSIII\uCOS-III\Ports\os_cpu.h)(0x5640B6
 I (E:\PROJECT\RD15002WV\RD15002WV\Freq\App\os_app_hooks.h)(0x5640B602)
 F (..\App\bsp.h)(0x5640B602)()
 F (..\App\cpu_cfg.h)(0x5640B602)()
-F (..\App\includes.h)(0x5673AEE5)()
+F (..\App\includes.h)(0x567E821B)()
 F (..\App\lib_cfg.h)(0x5640B602)()
 F (..\App\os_app_hooks.h)(0x5640B602)()
 F (..\App\os_cfg.h)(0x5640B602)()
 F (..\App\os_cfg_app.h)(0x5640B602)()
-F (..\App\APP\app.c)(0x5673BABB)(-c --cpu Cortex-M4 -D__MICROLIB -g -O2 --apcs=interwork -I..\App -I..\App\BSP -I..\LIB\INC -I..\LIB\SRC -I..\emWin\Config -I..\emWin\inc -I..\emWin\Lib -I..\uCOSIII\uC-CPU -I..\uCOSIII\uC-LIB -I..\uCOSIII\uC-Serial\Driver -I..\uCOSIII\uC-Serial\Line -I..\uCOSIII\uC-Serial\Source -I..\uCOSIII\uC-Serial\OS -I..\uCOSIII\uCOS-III\Ports -I..\uCOSIII\uCOS-III\Source -I..\emWin\Demo -I..\App\APP -I..\Protocol\drv\inc -I..\Protocol\drv\src -I..\Protocol\Protocol -I..\Protocol\sys-I "D:\Program Files\mdk\ARM\RV31\INC"-I "D:\Program Files\mdk\ARM\CMSIS\Include"-I "D:\Program Files\mdk\ARM\Inc\ST\STM32F4xx"-DUSE_STDPERIPH_DRIVER -DSTM32F4XX -DSTM32F40_41xxx-o ..\obj\app.o --omf_browse ..\obj\app.crf --depend ..\obj\app.d)
-I (E:\PROJECT\RD15002WV\RD15002WV\Freq\App\includes.h)(0x5673AEE5)
+F (..\App\APP\app.c)(0x5680879F)(-c --cpu Cortex-M4 -D__MICROLIB -g -O2 --apcs=interwork -I..\App -I..\App\BSP -I..\LIB\INC -I..\LIB\SRC -I..\emWin\Config -I..\emWin\inc -I..\emWin\Lib -I..\uCOSIII\uC-CPU -I..\uCOSIII\uC-LIB -I..\uCOSIII\uC-Serial\Driver -I..\uCOSIII\uC-Serial\Line -I..\uCOSIII\uC-Serial\Source -I..\uCOSIII\uC-Serial\OS -I..\uCOSIII\uCOS-III\Ports -I..\uCOSIII\uCOS-III\Source -I..\emWin\Demo -I..\App\APP -I..\Protocol\drv\inc -I..\Protocol\drv\src -I..\Protocol\Protocol -I..\Protocol\sys-I "D:\Program Files\mdk\ARM\RV31\INC"-I "D:\Program Files\mdk\ARM\CMSIS\Include"-I "D:\Program Files\mdk\ARM\Inc\ST\STM32F4xx"-DUSE_STDPERIPH_DRIVER -DSTM32F4XX -DSTM32F40_41xxx-o ..\obj\app.o --omf_browse ..\obj\app.crf --depend ..\obj\app.d)
+I (E:\PROJECT\RD15002WV\RD15002WV\Freq\App\includes.h)(0x567E821B)
 I (D:\Program Files\mdk\ARM\ARMCC\include\stdarg.h)(0x51C7B744)
 I (D:\Program Files\mdk\ARM\ARMCC\include\stdio.h)(0x51C7B744)
 I (D:\Program Files\mdk\ARM\ARMCC\include\stdlib.h)(0x51C7B744)
@@ -190,14 +192,15 @@ I (E:\PROJECT\RD15002WV\RD15002WV\Freq\LIB\INC\stm32f4xx_usart.h)(0x5640B602)
 I (E:\PROJECT\RD15002WV\RD15002WV\Freq\LIB\INC\stm32f4xx_wwdg.h)(0x5640B602)
 I (E:\PROJECT\RD15002WV\RD15002WV\Freq\LIB\INC\misc.h)(0x5640B602)
 I (E:\PROJECT\RD15002WV\RD15002WV\Freq\App\bsp.h)(0x5640B602)
-I (E:\PROJECT\RD15002WV\RD15002WV\Freq\App\BSP\bsp_init.h)(0x5673ADCE)
-I (E:\PROJECT\RD15002WV\RD15002WV\Freq\App\BSP\bsp_usart.h)(0x5640B602)
+I (E:\PROJECT\RD15002WV\RD15002WV\Freq\App\BSP\bsp_init.h)(0x5673C598)
+I (E:\PROJECT\RD15002WV\RD15002WV\Freq\App\BSP\bsp_usart.h)(0x567EAC78)
 I (E:\PROJECT\RD15002WV\RD15002WV\Freq\App\BSP\bsp_ltc2402.h)(0x564444FE)
 I (E:\PROJECT\RD15002WV\RD15002WV\Freq\App\BSP\bsp_sst25vf064.h)(0x5640B602)
-I (E:\PROJECT\RD15002WV\RD15002WV\Freq\App\BSP\bsp_rtc.h)(0x5640B602)
-I (E:\PROJECT\RD15002WV\RD15002WV\Freq\App\BSP\bsp_io_control.h)(0x5640B602)
+I (E:\PROJECT\RD15002WV\RD15002WV\Freq\App\BSP\bsp_rtc.h)(0x567E5101)
+I (E:\PROJECT\RD15002WV\RD15002WV\Freq\App\BSP\bsp_io_control.h)(0x567E87F1)
 I (E:\PROJECT\RD15002WV\RD15002WV\Freq\App\BSP\bsp_485.h)(0x56455136)
-I (E:\PROJECT\RD15002WV\RD15002WV\Freq\App\APP\app.h)(0x5673BC5A)
+I (E:\PROJECT\RD15002WV\RD15002WV\Freq\App\BSP\flash.h)(0x557F714A)
+I (E:\PROJECT\RD15002WV\RD15002WV\Freq\App\APP\app.h)(0x567EA5DB)
 I (E:\PROJECT\RD15002WV\RD15002WV\Freq\App\APP\FreqMeasurement.h)(0x5640B602)
 I (E:\PROJECT\RD15002WV\RD15002WV\Freq\App\APP\Tools.h)(0x5673AE1E)
 I (E:\PROJECT\RD15002WV\RD15002WV\Freq\Protocol\Protocol\AppMain.h)(0x56415017)
@@ -205,10 +208,10 @@ I (E:\PROJECT\RD15002WV\RD15002WV\Freq\Protocol\sys\kernel.h)(0x5673A8F5)
 I (E:\PROJECT\RD15002WV\RD15002WV\Freq\Protocol\sys\tool.h)(0x55705E61)
 I (E:\PROJECT\RD15002WV\RD15002WV\Freq\Protocol\sys\type32.h)(0x5571477F)
 I (E:\PROJECT\RD15002WV\RD15002WV\Freq\Protocol\sys\archDef.h)(0x4E979D2D)
-I (E:\PROJECT\RD15002WV\RD15002WV\Freq\Protocol\drv\inc\Protocol.h)(0x5673AB66)
-I (E:\PROJECT\RD15002WV\RD15002WV\Freq\Protocol\drv\inc\usart_serial.h)(0x5673AB36)
+I (E:\PROJECT\RD15002WV\RD15002WV\Freq\Protocol\drv\inc\Protocol.h)(0x5673C452)
+I (E:\PROJECT\RD15002WV\RD15002WV\Freq\Protocol\drv\inc\usart_serial.h)(0x5673C41A)
 F (..\App\APP\FreqMeasurement.c)(0x56653166)(-c --cpu Cortex-M4 -D__MICROLIB -g -O2 --apcs=interwork -I..\App -I..\App\BSP -I..\LIB\INC -I..\LIB\SRC -I..\emWin\Config -I..\emWin\inc -I..\emWin\Lib -I..\uCOSIII\uC-CPU -I..\uCOSIII\uC-LIB -I..\uCOSIII\uC-Serial\Driver -I..\uCOSIII\uC-Serial\Line -I..\uCOSIII\uC-Serial\Source -I..\uCOSIII\uC-Serial\OS -I..\uCOSIII\uCOS-III\Ports -I..\uCOSIII\uCOS-III\Source -I..\emWin\Demo -I..\App\APP -I..\Protocol\drv\inc -I..\Protocol\drv\src -I..\Protocol\Protocol -I..\Protocol\sys-I "D:\Program Files\mdk\ARM\RV31\INC"-I "D:\Program Files\mdk\ARM\CMSIS\Include"-I "D:\Program Files\mdk\ARM\Inc\ST\STM32F4xx"-DUSE_STDPERIPH_DRIVER -DSTM32F4XX -DSTM32F40_41xxx-o ..\obj\freqmeasurement.o --omf_browse ..\obj\freqmeasurement.crf --depend ..\obj\freqmeasurement.d)
-I (E:\PROJECT\RD15002WV\RD15002WV\Freq\App\includes.h)(0x5673AEE5)
+I (E:\PROJECT\RD15002WV\RD15002WV\Freq\App\includes.h)(0x567E821B)
 I (D:\Program Files\mdk\ARM\ARMCC\include\stdarg.h)(0x51C7B744)
 I (D:\Program Files\mdk\ARM\ARMCC\include\stdio.h)(0x51C7B744)
 I (D:\Program Files\mdk\ARM\ARMCC\include\stdlib.h)(0x51C7B744)
@@ -252,14 +255,15 @@ I (E:\PROJECT\RD15002WV\RD15002WV\Freq\LIB\INC\stm32f4xx_usart.h)(0x5640B602)
 I (E:\PROJECT\RD15002WV\RD15002WV\Freq\LIB\INC\stm32f4xx_wwdg.h)(0x5640B602)
 I (E:\PROJECT\RD15002WV\RD15002WV\Freq\LIB\INC\misc.h)(0x5640B602)
 I (E:\PROJECT\RD15002WV\RD15002WV\Freq\App\bsp.h)(0x5640B602)
-I (E:\PROJECT\RD15002WV\RD15002WV\Freq\App\BSP\bsp_init.h)(0x5673ADCE)
-I (E:\PROJECT\RD15002WV\RD15002WV\Freq\App\BSP\bsp_usart.h)(0x5640B602)
+I (E:\PROJECT\RD15002WV\RD15002WV\Freq\App\BSP\bsp_init.h)(0x5673C598)
+I (E:\PROJECT\RD15002WV\RD15002WV\Freq\App\BSP\bsp_usart.h)(0x567EAC78)
 I (E:\PROJECT\RD15002WV\RD15002WV\Freq\App\BSP\bsp_ltc2402.h)(0x564444FE)
 I (E:\PROJECT\RD15002WV\RD15002WV\Freq\App\BSP\bsp_sst25vf064.h)(0x5640B602)
-I (E:\PROJECT\RD15002WV\RD15002WV\Freq\App\BSP\bsp_rtc.h)(0x5640B602)
-I (E:\PROJECT\RD15002WV\RD15002WV\Freq\App\BSP\bsp_io_control.h)(0x5640B602)
+I (E:\PROJECT\RD15002WV\RD15002WV\Freq\App\BSP\bsp_rtc.h)(0x567E5101)
+I (E:\PROJECT\RD15002WV\RD15002WV\Freq\App\BSP\bsp_io_control.h)(0x567E87F1)
 I (E:\PROJECT\RD15002WV\RD15002WV\Freq\App\BSP\bsp_485.h)(0x56455136)
-I (E:\PROJECT\RD15002WV\RD15002WV\Freq\App\APP\app.h)(0x5673BC5A)
+I (E:\PROJECT\RD15002WV\RD15002WV\Freq\App\BSP\flash.h)(0x557F714A)
+I (E:\PROJECT\RD15002WV\RD15002WV\Freq\App\APP\app.h)(0x567EA5DB)
 I (E:\PROJECT\RD15002WV\RD15002WV\Freq\App\APP\FreqMeasurement.h)(0x5640B602)
 I (E:\PROJECT\RD15002WV\RD15002WV\Freq\App\APP\Tools.h)(0x5673AE1E)
 I (E:\PROJECT\RD15002WV\RD15002WV\Freq\Protocol\Protocol\AppMain.h)(0x56415017)
@@ -267,11 +271,11 @@ I (E:\PROJECT\RD15002WV\RD15002WV\Freq\Protocol\sys\kernel.h)(0x5673A8F5)
 I (E:\PROJECT\RD15002WV\RD15002WV\Freq\Protocol\sys\tool.h)(0x55705E61)
 I (E:\PROJECT\RD15002WV\RD15002WV\Freq\Protocol\sys\type32.h)(0x5571477F)
 I (E:\PROJECT\RD15002WV\RD15002WV\Freq\Protocol\sys\archDef.h)(0x4E979D2D)
-I (E:\PROJECT\RD15002WV\RD15002WV\Freq\Protocol\drv\inc\Protocol.h)(0x5673AB66)
-I (E:\PROJECT\RD15002WV\RD15002WV\Freq\Protocol\drv\inc\usart_serial.h)(0x5673AB36)
-F (..\App\APP\app.h)(0x5673BC5A)()
+I (E:\PROJECT\RD15002WV\RD15002WV\Freq\Protocol\drv\inc\Protocol.h)(0x5673C452)
+I (E:\PROJECT\RD15002WV\RD15002WV\Freq\Protocol\drv\inc\usart_serial.h)(0x5673C41A)
+F (..\App\APP\app.h)(0x567EA5DB)()
 F (..\App\APP\Tools.c)(0x5673AD2F)(-c --cpu Cortex-M4 -D__MICROLIB -g -O2 --apcs=interwork -I..\App -I..\App\BSP -I..\LIB\INC -I..\LIB\SRC -I..\emWin\Config -I..\emWin\inc -I..\emWin\Lib -I..\uCOSIII\uC-CPU -I..\uCOSIII\uC-LIB -I..\uCOSIII\uC-Serial\Driver -I..\uCOSIII\uC-Serial\Line -I..\uCOSIII\uC-Serial\Source -I..\uCOSIII\uC-Serial\OS -I..\uCOSIII\uCOS-III\Ports -I..\uCOSIII\uCOS-III\Source -I..\emWin\Demo -I..\App\APP -I..\Protocol\drv\inc -I..\Protocol\drv\src -I..\Protocol\Protocol -I..\Protocol\sys-I "D:\Program Files\mdk\ARM\RV31\INC"-I "D:\Program Files\mdk\ARM\CMSIS\Include"-I "D:\Program Files\mdk\ARM\Inc\ST\STM32F4xx"-DUSE_STDPERIPH_DRIVER -DSTM32F4XX -DSTM32F40_41xxx-o ..\obj\tools.o --omf_browse ..\obj\tools.crf --depend ..\obj\tools.d)
-I (E:\PROJECT\RD15002WV\RD15002WV\Freq\App\includes.h)(0x5673AEE5)
+I (E:\PROJECT\RD15002WV\RD15002WV\Freq\App\includes.h)(0x567E821B)
 I (D:\Program Files\mdk\ARM\ARMCC\include\stdarg.h)(0x51C7B744)
 I (D:\Program Files\mdk\ARM\ARMCC\include\stdio.h)(0x51C7B744)
 I (D:\Program Files\mdk\ARM\ARMCC\include\stdlib.h)(0x51C7B744)
@@ -315,14 +319,15 @@ I (E:\PROJECT\RD15002WV\RD15002WV\Freq\LIB\INC\stm32f4xx_usart.h)(0x5640B602)
 I (E:\PROJECT\RD15002WV\RD15002WV\Freq\LIB\INC\stm32f4xx_wwdg.h)(0x5640B602)
 I (E:\PROJECT\RD15002WV\RD15002WV\Freq\LIB\INC\misc.h)(0x5640B602)
 I (E:\PROJECT\RD15002WV\RD15002WV\Freq\App\bsp.h)(0x5640B602)
-I (E:\PROJECT\RD15002WV\RD15002WV\Freq\App\BSP\bsp_init.h)(0x5673ADCE)
-I (E:\PROJECT\RD15002WV\RD15002WV\Freq\App\BSP\bsp_usart.h)(0x5640B602)
+I (E:\PROJECT\RD15002WV\RD15002WV\Freq\App\BSP\bsp_init.h)(0x5673C598)
+I (E:\PROJECT\RD15002WV\RD15002WV\Freq\App\BSP\bsp_usart.h)(0x567EAC78)
 I (E:\PROJECT\RD15002WV\RD15002WV\Freq\App\BSP\bsp_ltc2402.h)(0x564444FE)
 I (E:\PROJECT\RD15002WV\RD15002WV\Freq\App\BSP\bsp_sst25vf064.h)(0x5640B602)
-I (E:\PROJECT\RD15002WV\RD15002WV\Freq\App\BSP\bsp_rtc.h)(0x5640B602)
-I (E:\PROJECT\RD15002WV\RD15002WV\Freq\App\BSP\bsp_io_control.h)(0x5640B602)
+I (E:\PROJECT\RD15002WV\RD15002WV\Freq\App\BSP\bsp_rtc.h)(0x567E5101)
+I (E:\PROJECT\RD15002WV\RD15002WV\Freq\App\BSP\bsp_io_control.h)(0x567E87F1)
 I (E:\PROJECT\RD15002WV\RD15002WV\Freq\App\BSP\bsp_485.h)(0x56455136)
-I (E:\PROJECT\RD15002WV\RD15002WV\Freq\App\APP\app.h)(0x5673BC5A)
+I (E:\PROJECT\RD15002WV\RD15002WV\Freq\App\BSP\flash.h)(0x557F714A)
+I (E:\PROJECT\RD15002WV\RD15002WV\Freq\App\APP\app.h)(0x567EA5DB)
 I (E:\PROJECT\RD15002WV\RD15002WV\Freq\App\APP\FreqMeasurement.h)(0x5640B602)
 I (E:\PROJECT\RD15002WV\RD15002WV\Freq\App\APP\Tools.h)(0x5673AE1E)
 I (E:\PROJECT\RD15002WV\RD15002WV\Freq\Protocol\Protocol\AppMain.h)(0x56415017)
@@ -330,10 +335,10 @@ I (E:\PROJECT\RD15002WV\RD15002WV\Freq\Protocol\sys\kernel.h)(0x5673A8F5)
 I (E:\PROJECT\RD15002WV\RD15002WV\Freq\Protocol\sys\tool.h)(0x55705E61)
 I (E:\PROJECT\RD15002WV\RD15002WV\Freq\Protocol\sys\type32.h)(0x5571477F)
 I (E:\PROJECT\RD15002WV\RD15002WV\Freq\Protocol\sys\archDef.h)(0x4E979D2D)
-I (E:\PROJECT\RD15002WV\RD15002WV\Freq\Protocol\drv\inc\Protocol.h)(0x5673AB66)
-I (E:\PROJECT\RD15002WV\RD15002WV\Freq\Protocol\drv\inc\usart_serial.h)(0x5673AB36)
-F (..\App\BSP\bsp_init.c)(0x5673ADCE)(-c --cpu Cortex-M4 -D__MICROLIB -g -O2 --apcs=interwork -I..\App -I..\App\BSP -I..\LIB\INC -I..\LIB\SRC -I..\emWin\Config -I..\emWin\inc -I..\emWin\Lib -I..\uCOSIII\uC-CPU -I..\uCOSIII\uC-LIB -I..\uCOSIII\uC-Serial\Driver -I..\uCOSIII\uC-Serial\Line -I..\uCOSIII\uC-Serial\Source -I..\uCOSIII\uC-Serial\OS -I..\uCOSIII\uCOS-III\Ports -I..\uCOSIII\uCOS-III\Source -I..\emWin\Demo -I..\App\APP -I..\Protocol\drv\inc -I..\Protocol\drv\src -I..\Protocol\Protocol -I..\Protocol\sys-I "D:\Program Files\mdk\ARM\RV31\INC"-I "D:\Program Files\mdk\ARM\CMSIS\Include"-I "D:\Program Files\mdk\ARM\Inc\ST\STM32F4xx"-DUSE_STDPERIPH_DRIVER -DSTM32F4XX -DSTM32F40_41xxx-o ..\obj\bsp_init.o --omf_browse ..\obj\bsp_init.crf --depend ..\obj\bsp_init.d)
-I (E:\PROJECT\RD15002WV\RD15002WV\Freq\App\includes.h)(0x5673AEE5)
+I (E:\PROJECT\RD15002WV\RD15002WV\Freq\Protocol\drv\inc\Protocol.h)(0x5673C452)
+I (E:\PROJECT\RD15002WV\RD15002WV\Freq\Protocol\drv\inc\usart_serial.h)(0x5673C41A)
+F (..\App\BSP\bsp_init.c)(0x567E8184)(-c --cpu Cortex-M4 -D__MICROLIB -g -O2 --apcs=interwork -I..\App -I..\App\BSP -I..\LIB\INC -I..\LIB\SRC -I..\emWin\Config -I..\emWin\inc -I..\emWin\Lib -I..\uCOSIII\uC-CPU -I..\uCOSIII\uC-LIB -I..\uCOSIII\uC-Serial\Driver -I..\uCOSIII\uC-Serial\Line -I..\uCOSIII\uC-Serial\Source -I..\uCOSIII\uC-Serial\OS -I..\uCOSIII\uCOS-III\Ports -I..\uCOSIII\uCOS-III\Source -I..\emWin\Demo -I..\App\APP -I..\Protocol\drv\inc -I..\Protocol\drv\src -I..\Protocol\Protocol -I..\Protocol\sys-I "D:\Program Files\mdk\ARM\RV31\INC"-I "D:\Program Files\mdk\ARM\CMSIS\Include"-I "D:\Program Files\mdk\ARM\Inc\ST\STM32F4xx"-DUSE_STDPERIPH_DRIVER -DSTM32F4XX -DSTM32F40_41xxx-o ..\obj\bsp_init.o --omf_browse ..\obj\bsp_init.crf --depend ..\obj\bsp_init.d)
+I (E:\PROJECT\RD15002WV\RD15002WV\Freq\App\includes.h)(0x567E821B)
 I (D:\Program Files\mdk\ARM\ARMCC\include\stdarg.h)(0x51C7B744)
 I (D:\Program Files\mdk\ARM\ARMCC\include\stdio.h)(0x51C7B744)
 I (D:\Program Files\mdk\ARM\ARMCC\include\stdlib.h)(0x51C7B744)
@@ -377,14 +382,15 @@ I (E:\PROJECT\RD15002WV\RD15002WV\Freq\LIB\INC\stm32f4xx_usart.h)(0x5640B602)
 I (E:\PROJECT\RD15002WV\RD15002WV\Freq\LIB\INC\stm32f4xx_wwdg.h)(0x5640B602)
 I (E:\PROJECT\RD15002WV\RD15002WV\Freq\LIB\INC\misc.h)(0x5640B602)
 I (E:\PROJECT\RD15002WV\RD15002WV\Freq\App\bsp.h)(0x5640B602)
-I (E:\PROJECT\RD15002WV\RD15002WV\Freq\App\BSP\bsp_init.h)(0x5673ADCE)
-I (E:\PROJECT\RD15002WV\RD15002WV\Freq\App\BSP\bsp_usart.h)(0x5640B602)
+I (E:\PROJECT\RD15002WV\RD15002WV\Freq\App\BSP\bsp_init.h)(0x5673C598)
+I (E:\PROJECT\RD15002WV\RD15002WV\Freq\App\BSP\bsp_usart.h)(0x567EAC78)
 I (E:\PROJECT\RD15002WV\RD15002WV\Freq\App\BSP\bsp_ltc2402.h)(0x564444FE)
 I (E:\PROJECT\RD15002WV\RD15002WV\Freq\App\BSP\bsp_sst25vf064.h)(0x5640B602)
-I (E:\PROJECT\RD15002WV\RD15002WV\Freq\App\BSP\bsp_rtc.h)(0x5640B602)
-I (E:\PROJECT\RD15002WV\RD15002WV\Freq\App\BSP\bsp_io_control.h)(0x5640B602)
+I (E:\PROJECT\RD15002WV\RD15002WV\Freq\App\BSP\bsp_rtc.h)(0x567E5101)
+I (E:\PROJECT\RD15002WV\RD15002WV\Freq\App\BSP\bsp_io_control.h)(0x567E87F1)
 I (E:\PROJECT\RD15002WV\RD15002WV\Freq\App\BSP\bsp_485.h)(0x56455136)
-I (E:\PROJECT\RD15002WV\RD15002WV\Freq\App\APP\app.h)(0x5673BC5A)
+I (E:\PROJECT\RD15002WV\RD15002WV\Freq\App\BSP\flash.h)(0x557F714A)
+I (E:\PROJECT\RD15002WV\RD15002WV\Freq\App\APP\app.h)(0x567EA5DB)
 I (E:\PROJECT\RD15002WV\RD15002WV\Freq\App\APP\FreqMeasurement.h)(0x5640B602)
 I (E:\PROJECT\RD15002WV\RD15002WV\Freq\App\APP\Tools.h)(0x5673AE1E)
 I (E:\PROJECT\RD15002WV\RD15002WV\Freq\Protocol\Protocol\AppMain.h)(0x56415017)
@@ -392,9 +398,9 @@ I (E:\PROJECT\RD15002WV\RD15002WV\Freq\Protocol\sys\kernel.h)(0x5673A8F5)
 I (E:\PROJECT\RD15002WV\RD15002WV\Freq\Protocol\sys\tool.h)(0x55705E61)
 I (E:\PROJECT\RD15002WV\RD15002WV\Freq\Protocol\sys\type32.h)(0x5571477F)
 I (E:\PROJECT\RD15002WV\RD15002WV\Freq\Protocol\sys\archDef.h)(0x4E979D2D)
-I (E:\PROJECT\RD15002WV\RD15002WV\Freq\Protocol\drv\inc\Protocol.h)(0x5673AB66)
-I (E:\PROJECT\RD15002WV\RD15002WV\Freq\Protocol\drv\inc\usart_serial.h)(0x5673AB36)
-F (..\App\BSP\bsp_usart.c)(0x56454BC7)(-c --cpu Cortex-M4 -D__MICROLIB -g -O2 --apcs=interwork -I..\App -I..\App\BSP -I..\LIB\INC -I..\LIB\SRC -I..\emWin\Config -I..\emWin\inc -I..\emWin\Lib -I..\uCOSIII\uC-CPU -I..\uCOSIII\uC-LIB -I..\uCOSIII\uC-Serial\Driver -I..\uCOSIII\uC-Serial\Line -I..\uCOSIII\uC-Serial\Source -I..\uCOSIII\uC-Serial\OS -I..\uCOSIII\uCOS-III\Ports -I..\uCOSIII\uCOS-III\Source -I..\emWin\Demo -I..\App\APP -I..\Protocol\drv\inc -I..\Protocol\drv\src -I..\Protocol\Protocol -I..\Protocol\sys-I "D:\Program Files\mdk\ARM\RV31\INC"-I "D:\Program Files\mdk\ARM\CMSIS\Include"-I "D:\Program Files\mdk\ARM\Inc\ST\STM32F4xx"-DUSE_STDPERIPH_DRIVER -DSTM32F4XX -DSTM32F40_41xxx-o ..\obj\bsp_usart.o --omf_browse ..\obj\bsp_usart.crf --depend ..\obj\bsp_usart.d)
+I (E:\PROJECT\RD15002WV\RD15002WV\Freq\Protocol\drv\inc\Protocol.h)(0x5673C452)
+I (E:\PROJECT\RD15002WV\RD15002WV\Freq\Protocol\drv\inc\usart_serial.h)(0x5673C41A)
+F (..\App\BSP\bsp_usart.c)(0x567EB341)(-c --cpu Cortex-M4 -D__MICROLIB -g -O2 --apcs=interwork -I..\App -I..\App\BSP -I..\LIB\INC -I..\LIB\SRC -I..\emWin\Config -I..\emWin\inc -I..\emWin\Lib -I..\uCOSIII\uC-CPU -I..\uCOSIII\uC-LIB -I..\uCOSIII\uC-Serial\Driver -I..\uCOSIII\uC-Serial\Line -I..\uCOSIII\uC-Serial\Source -I..\uCOSIII\uC-Serial\OS -I..\uCOSIII\uCOS-III\Ports -I..\uCOSIII\uCOS-III\Source -I..\emWin\Demo -I..\App\APP -I..\Protocol\drv\inc -I..\Protocol\drv\src -I..\Protocol\Protocol -I..\Protocol\sys-I "D:\Program Files\mdk\ARM\RV31\INC"-I "D:\Program Files\mdk\ARM\CMSIS\Include"-I "D:\Program Files\mdk\ARM\Inc\ST\STM32F4xx"-DUSE_STDPERIPH_DRIVER -DSTM32F4XX -DSTM32F40_41xxx-o ..\obj\bsp_usart.o --omf_browse ..\obj\bsp_usart.crf --depend ..\obj\bsp_usart.d)
 I (E:\PROJECT\RD15002WV\RD15002WV\Freq\App\BSP\stm32f4xx.h)(0x5640B602)
 I (D:\Program Files\mdk\ARM\CMSIS\Include\core_cm4.h)(0x51C7B54A)
 I (D:\Program Files\mdk\ARM\ARMCC\include\stdint.h)(0x51C7B744)
@@ -420,7 +426,7 @@ I (E:\PROJECT\RD15002WV\RD15002WV\Freq\LIB\INC\stm32f4xx_wwdg.h)(0x5640B602)
 I (E:\PROJECT\RD15002WV\RD15002WV\Freq\LIB\INC\misc.h)(0x5640B602)
 I (D:\Program Files\mdk\ARM\ARMCC\include\stdio.h)(0x51C7B744)
 F (..\App\BSP\bsp_ltc2402.c)(0x56652B31)(-c --cpu Cortex-M4 -D__MICROLIB -g -O2 --apcs=interwork -I..\App -I..\App\BSP -I..\LIB\INC -I..\LIB\SRC -I..\emWin\Config -I..\emWin\inc -I..\emWin\Lib -I..\uCOSIII\uC-CPU -I..\uCOSIII\uC-LIB -I..\uCOSIII\uC-Serial\Driver -I..\uCOSIII\uC-Serial\Line -I..\uCOSIII\uC-Serial\Source -I..\uCOSIII\uC-Serial\OS -I..\uCOSIII\uCOS-III\Ports -I..\uCOSIII\uCOS-III\Source -I..\emWin\Demo -I..\App\APP -I..\Protocol\drv\inc -I..\Protocol\drv\src -I..\Protocol\Protocol -I..\Protocol\sys-I "D:\Program Files\mdk\ARM\RV31\INC"-I "D:\Program Files\mdk\ARM\CMSIS\Include"-I "D:\Program Files\mdk\ARM\Inc\ST\STM32F4xx"-DUSE_STDPERIPH_DRIVER -DSTM32F4XX -DSTM32F40_41xxx-o ..\obj\bsp_ltc2402.o --omf_browse ..\obj\bsp_ltc2402.crf --depend ..\obj\bsp_ltc2402.d)
-I (E:\PROJECT\RD15002WV\RD15002WV\Freq\App\includes.h)(0x5673AEE5)
+I (E:\PROJECT\RD15002WV\RD15002WV\Freq\App\includes.h)(0x567E821B)
 I (D:\Program Files\mdk\ARM\ARMCC\include\stdarg.h)(0x51C7B744)
 I (D:\Program Files\mdk\ARM\ARMCC\include\stdio.h)(0x51C7B744)
 I (D:\Program Files\mdk\ARM\ARMCC\include\stdlib.h)(0x51C7B744)
@@ -464,14 +470,15 @@ I (E:\PROJECT\RD15002WV\RD15002WV\Freq\LIB\INC\stm32f4xx_usart.h)(0x5640B602)
 I (E:\PROJECT\RD15002WV\RD15002WV\Freq\LIB\INC\stm32f4xx_wwdg.h)(0x5640B602)
 I (E:\PROJECT\RD15002WV\RD15002WV\Freq\LIB\INC\misc.h)(0x5640B602)
 I (E:\PROJECT\RD15002WV\RD15002WV\Freq\App\bsp.h)(0x5640B602)
-I (E:\PROJECT\RD15002WV\RD15002WV\Freq\App\BSP\bsp_init.h)(0x5673ADCE)
-I (E:\PROJECT\RD15002WV\RD15002WV\Freq\App\BSP\bsp_usart.h)(0x5640B602)
+I (E:\PROJECT\RD15002WV\RD15002WV\Freq\App\BSP\bsp_init.h)(0x5673C598)
+I (E:\PROJECT\RD15002WV\RD15002WV\Freq\App\BSP\bsp_usart.h)(0x567EAC78)
 I (E:\PROJECT\RD15002WV\RD15002WV\Freq\App\BSP\bsp_ltc2402.h)(0x564444FE)
 I (E:\PROJECT\RD15002WV\RD15002WV\Freq\App\BSP\bsp_sst25vf064.h)(0x5640B602)
-I (E:\PROJECT\RD15002WV\RD15002WV\Freq\App\BSP\bsp_rtc.h)(0x5640B602)
-I (E:\PROJECT\RD15002WV\RD15002WV\Freq\App\BSP\bsp_io_control.h)(0x5640B602)
+I (E:\PROJECT\RD15002WV\RD15002WV\Freq\App\BSP\bsp_rtc.h)(0x567E5101)
+I (E:\PROJECT\RD15002WV\RD15002WV\Freq\App\BSP\bsp_io_control.h)(0x567E87F1)
 I (E:\PROJECT\RD15002WV\RD15002WV\Freq\App\BSP\bsp_485.h)(0x56455136)
-I (E:\PROJECT\RD15002WV\RD15002WV\Freq\App\APP\app.h)(0x5673BC5A)
+I (E:\PROJECT\RD15002WV\RD15002WV\Freq\App\BSP\flash.h)(0x557F714A)
+I (E:\PROJECT\RD15002WV\RD15002WV\Freq\App\APP\app.h)(0x567EA5DB)
 I (E:\PROJECT\RD15002WV\RD15002WV\Freq\App\APP\FreqMeasurement.h)(0x5640B602)
 I (E:\PROJECT\RD15002WV\RD15002WV\Freq\App\APP\Tools.h)(0x5673AE1E)
 I (E:\PROJECT\RD15002WV\RD15002WV\Freq\Protocol\Protocol\AppMain.h)(0x56415017)
@@ -479,10 +486,10 @@ I (E:\PROJECT\RD15002WV\RD15002WV\Freq\Protocol\sys\kernel.h)(0x5673A8F5)
 I (E:\PROJECT\RD15002WV\RD15002WV\Freq\Protocol\sys\tool.h)(0x55705E61)
 I (E:\PROJECT\RD15002WV\RD15002WV\Freq\Protocol\sys\type32.h)(0x5571477F)
 I (E:\PROJECT\RD15002WV\RD15002WV\Freq\Protocol\sys\archDef.h)(0x4E979D2D)
-I (E:\PROJECT\RD15002WV\RD15002WV\Freq\Protocol\drv\inc\Protocol.h)(0x5673AB66)
-I (E:\PROJECT\RD15002WV\RD15002WV\Freq\Protocol\drv\inc\usart_serial.h)(0x5673AB36)
+I (E:\PROJECT\RD15002WV\RD15002WV\Freq\Protocol\drv\inc\Protocol.h)(0x5673C452)
+I (E:\PROJECT\RD15002WV\RD15002WV\Freq\Protocol\drv\inc\usart_serial.h)(0x5673C41A)
 F (..\App\BSP\bsp_sst25vf064.c)(0x5640B602)(-c --cpu Cortex-M4 -D__MICROLIB -g -O2 --apcs=interwork -I..\App -I..\App\BSP -I..\LIB\INC -I..\LIB\SRC -I..\emWin\Config -I..\emWin\inc -I..\emWin\Lib -I..\uCOSIII\uC-CPU -I..\uCOSIII\uC-LIB -I..\uCOSIII\uC-Serial\Driver -I..\uCOSIII\uC-Serial\Line -I..\uCOSIII\uC-Serial\Source -I..\uCOSIII\uC-Serial\OS -I..\uCOSIII\uCOS-III\Ports -I..\uCOSIII\uCOS-III\Source -I..\emWin\Demo -I..\App\APP -I..\Protocol\drv\inc -I..\Protocol\drv\src -I..\Protocol\Protocol -I..\Protocol\sys-I "D:\Program Files\mdk\ARM\RV31\INC"-I "D:\Program Files\mdk\ARM\CMSIS\Include"-I "D:\Program Files\mdk\ARM\Inc\ST\STM32F4xx"-DUSE_STDPERIPH_DRIVER -DSTM32F4XX -DSTM32F40_41xxx-o ..\obj\bsp_sst25vf064.o --omf_browse ..\obj\bsp_sst25vf064.crf --depend ..\obj\bsp_sst25vf064.d)
-I (E:\PROJECT\RD15002WV\RD15002WV\Freq\App\includes.h)(0x5673AEE5)
+I (E:\PROJECT\RD15002WV\RD15002WV\Freq\App\includes.h)(0x567E821B)
 I (D:\Program Files\mdk\ARM\ARMCC\include\stdarg.h)(0x51C7B744)
 I (D:\Program Files\mdk\ARM\ARMCC\include\stdio.h)(0x51C7B744)
 I (D:\Program Files\mdk\ARM\ARMCC\include\stdlib.h)(0x51C7B744)
@@ -526,14 +533,15 @@ I (E:\PROJECT\RD15002WV\RD15002WV\Freq\LIB\INC\stm32f4xx_usart.h)(0x5640B602)
 I (E:\PROJECT\RD15002WV\RD15002WV\Freq\LIB\INC\stm32f4xx_wwdg.h)(0x5640B602)
 I (E:\PROJECT\RD15002WV\RD15002WV\Freq\LIB\INC\misc.h)(0x5640B602)
 I (E:\PROJECT\RD15002WV\RD15002WV\Freq\App\bsp.h)(0x5640B602)
-I (E:\PROJECT\RD15002WV\RD15002WV\Freq\App\BSP\bsp_init.h)(0x5673ADCE)
-I (E:\PROJECT\RD15002WV\RD15002WV\Freq\App\BSP\bsp_usart.h)(0x5640B602)
+I (E:\PROJECT\RD15002WV\RD15002WV\Freq\App\BSP\bsp_init.h)(0x5673C598)
+I (E:\PROJECT\RD15002WV\RD15002WV\Freq\App\BSP\bsp_usart.h)(0x567EAC78)
 I (E:\PROJECT\RD15002WV\RD15002WV\Freq\App\BSP\bsp_ltc2402.h)(0x564444FE)
 I (E:\PROJECT\RD15002WV\RD15002WV\Freq\App\BSP\bsp_sst25vf064.h)(0x5640B602)
-I (E:\PROJECT\RD15002WV\RD15002WV\Freq\App\BSP\bsp_rtc.h)(0x5640B602)
-I (E:\PROJECT\RD15002WV\RD15002WV\Freq\App\BSP\bsp_io_control.h)(0x5640B602)
+I (E:\PROJECT\RD15002WV\RD15002WV\Freq\App\BSP\bsp_rtc.h)(0x567E5101)
+I (E:\PROJECT\RD15002WV\RD15002WV\Freq\App\BSP\bsp_io_control.h)(0x567E87F1)
 I (E:\PROJECT\RD15002WV\RD15002WV\Freq\App\BSP\bsp_485.h)(0x56455136)
-I (E:\PROJECT\RD15002WV\RD15002WV\Freq\App\APP\app.h)(0x5673BC5A)
+I (E:\PROJECT\RD15002WV\RD15002WV\Freq\App\BSP\flash.h)(0x557F714A)
+I (E:\PROJECT\RD15002WV\RD15002WV\Freq\App\APP\app.h)(0x567EA5DB)
 I (E:\PROJECT\RD15002WV\RD15002WV\Freq\App\APP\FreqMeasurement.h)(0x5640B602)
 I (E:\PROJECT\RD15002WV\RD15002WV\Freq\App\APP\Tools.h)(0x5673AE1E)
 I (E:\PROJECT\RD15002WV\RD15002WV\Freq\Protocol\Protocol\AppMain.h)(0x56415017)
@@ -541,10 +549,10 @@ I (E:\PROJECT\RD15002WV\RD15002WV\Freq\Protocol\sys\kernel.h)(0x5673A8F5)
 I (E:\PROJECT\RD15002WV\RD15002WV\Freq\Protocol\sys\tool.h)(0x55705E61)
 I (E:\PROJECT\RD15002WV\RD15002WV\Freq\Protocol\sys\type32.h)(0x5571477F)
 I (E:\PROJECT\RD15002WV\RD15002WV\Freq\Protocol\sys\archDef.h)(0x4E979D2D)
-I (E:\PROJECT\RD15002WV\RD15002WV\Freq\Protocol\drv\inc\Protocol.h)(0x5673AB66)
-I (E:\PROJECT\RD15002WV\RD15002WV\Freq\Protocol\drv\inc\usart_serial.h)(0x5673AB36)
-F (..\App\BSP\bsp_rtc.c)(0x5640B602)(-c --cpu Cortex-M4 -D__MICROLIB -g -O2 --apcs=interwork -I..\App -I..\App\BSP -I..\LIB\INC -I..\LIB\SRC -I..\emWin\Config -I..\emWin\inc -I..\emWin\Lib -I..\uCOSIII\uC-CPU -I..\uCOSIII\uC-LIB -I..\uCOSIII\uC-Serial\Driver -I..\uCOSIII\uC-Serial\Line -I..\uCOSIII\uC-Serial\Source -I..\uCOSIII\uC-Serial\OS -I..\uCOSIII\uCOS-III\Ports -I..\uCOSIII\uCOS-III\Source -I..\emWin\Demo -I..\App\APP -I..\Protocol\drv\inc -I..\Protocol\drv\src -I..\Protocol\Protocol -I..\Protocol\sys-I "D:\Program Files\mdk\ARM\RV31\INC"-I "D:\Program Files\mdk\ARM\CMSIS\Include"-I "D:\Program Files\mdk\ARM\Inc\ST\STM32F4xx"-DUSE_STDPERIPH_DRIVER -DSTM32F4XX -DSTM32F40_41xxx-o ..\obj\bsp_rtc.o --omf_browse ..\obj\bsp_rtc.crf --depend ..\obj\bsp_rtc.d)
-I (E:\PROJECT\RD15002WV\RD15002WV\Freq\App\includes.h)(0x5673AEE5)
+I (E:\PROJECT\RD15002WV\RD15002WV\Freq\Protocol\drv\inc\Protocol.h)(0x5673C452)
+I (E:\PROJECT\RD15002WV\RD15002WV\Freq\Protocol\drv\inc\usart_serial.h)(0x5673C41A)
+F (..\App\BSP\bsp_rtc.c)(0x56808887)(-c --cpu Cortex-M4 -D__MICROLIB -g -O2 --apcs=interwork -I..\App -I..\App\BSP -I..\LIB\INC -I..\LIB\SRC -I..\emWin\Config -I..\emWin\inc -I..\emWin\Lib -I..\uCOSIII\uC-CPU -I..\uCOSIII\uC-LIB -I..\uCOSIII\uC-Serial\Driver -I..\uCOSIII\uC-Serial\Line -I..\uCOSIII\uC-Serial\Source -I..\uCOSIII\uC-Serial\OS -I..\uCOSIII\uCOS-III\Ports -I..\uCOSIII\uCOS-III\Source -I..\emWin\Demo -I..\App\APP -I..\Protocol\drv\inc -I..\Protocol\drv\src -I..\Protocol\Protocol -I..\Protocol\sys-I "D:\Program Files\mdk\ARM\RV31\INC"-I "D:\Program Files\mdk\ARM\CMSIS\Include"-I "D:\Program Files\mdk\ARM\Inc\ST\STM32F4xx"-DUSE_STDPERIPH_DRIVER -DSTM32F4XX -DSTM32F40_41xxx-o ..\obj\bsp_rtc.o --omf_browse ..\obj\bsp_rtc.crf --depend ..\obj\bsp_rtc.d)
+I (E:\PROJECT\RD15002WV\RD15002WV\Freq\App\includes.h)(0x567E821B)
 I (D:\Program Files\mdk\ARM\ARMCC\include\stdarg.h)(0x51C7B744)
 I (D:\Program Files\mdk\ARM\ARMCC\include\stdio.h)(0x51C7B744)
 I (D:\Program Files\mdk\ARM\ARMCC\include\stdlib.h)(0x51C7B744)
@@ -588,14 +596,15 @@ I (E:\PROJECT\RD15002WV\RD15002WV\Freq\LIB\INC\stm32f4xx_usart.h)(0x5640B602)
 I (E:\PROJECT\RD15002WV\RD15002WV\Freq\LIB\INC\stm32f4xx_wwdg.h)(0x5640B602)
 I (E:\PROJECT\RD15002WV\RD15002WV\Freq\LIB\INC\misc.h)(0x5640B602)
 I (E:\PROJECT\RD15002WV\RD15002WV\Freq\App\bsp.h)(0x5640B602)
-I (E:\PROJECT\RD15002WV\RD15002WV\Freq\App\BSP\bsp_init.h)(0x5673ADCE)
-I (E:\PROJECT\RD15002WV\RD15002WV\Freq\App\BSP\bsp_usart.h)(0x5640B602)
+I (E:\PROJECT\RD15002WV\RD15002WV\Freq\App\BSP\bsp_init.h)(0x5673C598)
+I (E:\PROJECT\RD15002WV\RD15002WV\Freq\App\BSP\bsp_usart.h)(0x567EAC78)
 I (E:\PROJECT\RD15002WV\RD15002WV\Freq\App\BSP\bsp_ltc2402.h)(0x564444FE)
 I (E:\PROJECT\RD15002WV\RD15002WV\Freq\App\BSP\bsp_sst25vf064.h)(0x5640B602)
-I (E:\PROJECT\RD15002WV\RD15002WV\Freq\App\BSP\bsp_rtc.h)(0x5640B602)
-I (E:\PROJECT\RD15002WV\RD15002WV\Freq\App\BSP\bsp_io_control.h)(0x5640B602)
+I (E:\PROJECT\RD15002WV\RD15002WV\Freq\App\BSP\bsp_rtc.h)(0x567E5101)
+I (E:\PROJECT\RD15002WV\RD15002WV\Freq\App\BSP\bsp_io_control.h)(0x567E87F1)
 I (E:\PROJECT\RD15002WV\RD15002WV\Freq\App\BSP\bsp_485.h)(0x56455136)
-I (E:\PROJECT\RD15002WV\RD15002WV\Freq\App\APP\app.h)(0x5673BC5A)
+I (E:\PROJECT\RD15002WV\RD15002WV\Freq\App\BSP\flash.h)(0x557F714A)
+I (E:\PROJECT\RD15002WV\RD15002WV\Freq\App\APP\app.h)(0x567EA5DB)
 I (E:\PROJECT\RD15002WV\RD15002WV\Freq\App\APP\FreqMeasurement.h)(0x5640B602)
 I (E:\PROJECT\RD15002WV\RD15002WV\Freq\App\APP\Tools.h)(0x5673AE1E)
 I (E:\PROJECT\RD15002WV\RD15002WV\Freq\Protocol\Protocol\AppMain.h)(0x56415017)
@@ -603,10 +612,10 @@ I (E:\PROJECT\RD15002WV\RD15002WV\Freq\Protocol\sys\kernel.h)(0x5673A8F5)
 I (E:\PROJECT\RD15002WV\RD15002WV\Freq\Protocol\sys\tool.h)(0x55705E61)
 I (E:\PROJECT\RD15002WV\RD15002WV\Freq\Protocol\sys\type32.h)(0x5571477F)
 I (E:\PROJECT\RD15002WV\RD15002WV\Freq\Protocol\sys\archDef.h)(0x4E979D2D)
-I (E:\PROJECT\RD15002WV\RD15002WV\Freq\Protocol\drv\inc\Protocol.h)(0x5673AB66)
-I (E:\PROJECT\RD15002WV\RD15002WV\Freq\Protocol\drv\inc\usart_serial.h)(0x5673AB36)
+I (E:\PROJECT\RD15002WV\RD15002WV\Freq\Protocol\drv\inc\Protocol.h)(0x5673C452)
+I (E:\PROJECT\RD15002WV\RD15002WV\Freq\Protocol\drv\inc\usart_serial.h)(0x5673C41A)
 F (..\App\BSP\bsp_485.c)(0x564559AB)(-c --cpu Cortex-M4 -D__MICROLIB -g -O2 --apcs=interwork -I..\App -I..\App\BSP -I..\LIB\INC -I..\LIB\SRC -I..\emWin\Config -I..\emWin\inc -I..\emWin\Lib -I..\uCOSIII\uC-CPU -I..\uCOSIII\uC-LIB -I..\uCOSIII\uC-Serial\Driver -I..\uCOSIII\uC-Serial\Line -I..\uCOSIII\uC-Serial\Source -I..\uCOSIII\uC-Serial\OS -I..\uCOSIII\uCOS-III\Ports -I..\uCOSIII\uCOS-III\Source -I..\emWin\Demo -I..\App\APP -I..\Protocol\drv\inc -I..\Protocol\drv\src -I..\Protocol\Protocol -I..\Protocol\sys-I "D:\Program Files\mdk\ARM\RV31\INC"-I "D:\Program Files\mdk\ARM\CMSIS\Include"-I "D:\Program Files\mdk\ARM\Inc\ST\STM32F4xx"-DUSE_STDPERIPH_DRIVER -DSTM32F4XX -DSTM32F40_41xxx-o ..\obj\bsp_485.o --omf_browse ..\obj\bsp_485.crf --depend ..\obj\bsp_485.d)
-I (E:\PROJECT\RD15002WV\RD15002WV\Freq\App\includes.h)(0x5673AEE5)
+I (E:\PROJECT\RD15002WV\RD15002WV\Freq\App\includes.h)(0x567E821B)
 I (D:\Program Files\mdk\ARM\ARMCC\include\stdarg.h)(0x51C7B744)
 I (D:\Program Files\mdk\ARM\ARMCC\include\stdio.h)(0x51C7B744)
 I (D:\Program Files\mdk\ARM\ARMCC\include\stdlib.h)(0x51C7B744)
@@ -650,14 +659,15 @@ I (E:\PROJECT\RD15002WV\RD15002WV\Freq\LIB\INC\stm32f4xx_usart.h)(0x5640B602)
 I (E:\PROJECT\RD15002WV\RD15002WV\Freq\LIB\INC\stm32f4xx_wwdg.h)(0x5640B602)
 I (E:\PROJECT\RD15002WV\RD15002WV\Freq\LIB\INC\misc.h)(0x5640B602)
 I (E:\PROJECT\RD15002WV\RD15002WV\Freq\App\bsp.h)(0x5640B602)
-I (E:\PROJECT\RD15002WV\RD15002WV\Freq\App\BSP\bsp_init.h)(0x5673ADCE)
-I (E:\PROJECT\RD15002WV\RD15002WV\Freq\App\BSP\bsp_usart.h)(0x5640B602)
+I (E:\PROJECT\RD15002WV\RD15002WV\Freq\App\BSP\bsp_init.h)(0x5673C598)
+I (E:\PROJECT\RD15002WV\RD15002WV\Freq\App\BSP\bsp_usart.h)(0x567EAC78)
 I (E:\PROJECT\RD15002WV\RD15002WV\Freq\App\BSP\bsp_ltc2402.h)(0x564444FE)
 I (E:\PROJECT\RD15002WV\RD15002WV\Freq\App\BSP\bsp_sst25vf064.h)(0x5640B602)
-I (E:\PROJECT\RD15002WV\RD15002WV\Freq\App\BSP\bsp_rtc.h)(0x5640B602)
-I (E:\PROJECT\RD15002WV\RD15002WV\Freq\App\BSP\bsp_io_control.h)(0x5640B602)
+I (E:\PROJECT\RD15002WV\RD15002WV\Freq\App\BSP\bsp_rtc.h)(0x567E5101)
+I (E:\PROJECT\RD15002WV\RD15002WV\Freq\App\BSP\bsp_io_control.h)(0x567E87F1)
 I (E:\PROJECT\RD15002WV\RD15002WV\Freq\App\BSP\bsp_485.h)(0x56455136)
-I (E:\PROJECT\RD15002WV\RD15002WV\Freq\App\APP\app.h)(0x5673BC5A)
+I (E:\PROJECT\RD15002WV\RD15002WV\Freq\App\BSP\flash.h)(0x557F714A)
+I (E:\PROJECT\RD15002WV\RD15002WV\Freq\App\APP\app.h)(0x567EA5DB)
 I (E:\PROJECT\RD15002WV\RD15002WV\Freq\App\APP\FreqMeasurement.h)(0x5640B602)
 I (E:\PROJECT\RD15002WV\RD15002WV\Freq\App\APP\Tools.h)(0x5673AE1E)
 I (E:\PROJECT\RD15002WV\RD15002WV\Freq\Protocol\Protocol\AppMain.h)(0x56415017)
@@ -665,12 +675,12 @@ I (E:\PROJECT\RD15002WV\RD15002WV\Freq\Protocol\sys\kernel.h)(0x5673A8F5)
 I (E:\PROJECT\RD15002WV\RD15002WV\Freq\Protocol\sys\tool.h)(0x55705E61)
 I (E:\PROJECT\RD15002WV\RD15002WV\Freq\Protocol\sys\type32.h)(0x5571477F)
 I (E:\PROJECT\RD15002WV\RD15002WV\Freq\Protocol\sys\archDef.h)(0x4E979D2D)
-I (E:\PROJECT\RD15002WV\RD15002WV\Freq\Protocol\drv\inc\Protocol.h)(0x5673AB66)
-I (E:\PROJECT\RD15002WV\RD15002WV\Freq\Protocol\drv\inc\usart_serial.h)(0x5673AB36)
+I (E:\PROJECT\RD15002WV\RD15002WV\Freq\Protocol\drv\inc\Protocol.h)(0x5673C452)
+I (E:\PROJECT\RD15002WV\RD15002WV\Freq\Protocol\drv\inc\usart_serial.h)(0x5673C41A)
 F (..\App\BSP\bsp_cpld4064.c)(0x5640B602)(-c --cpu Cortex-M4 -D__MICROLIB -g -O2 --apcs=interwork -I..\App -I..\App\BSP -I..\LIB\INC -I..\LIB\SRC -I..\emWin\Config -I..\emWin\inc -I..\emWin\Lib -I..\uCOSIII\uC-CPU -I..\uCOSIII\uC-LIB -I..\uCOSIII\uC-Serial\Driver -I..\uCOSIII\uC-Serial\Line -I..\uCOSIII\uC-Serial\Source -I..\uCOSIII\uC-Serial\OS -I..\uCOSIII\uCOS-III\Ports -I..\uCOSIII\uCOS-III\Source -I..\emWin\Demo -I..\App\APP -I..\Protocol\drv\inc -I..\Protocol\drv\src -I..\Protocol\Protocol -I..\Protocol\sys-I "D:\Program Files\mdk\ARM\RV31\INC"-I "D:\Program Files\mdk\ARM\CMSIS\Include"-I "D:\Program Files\mdk\ARM\Inc\ST\STM32F4xx"-DUSE_STDPERIPH_DRIVER -DSTM32F4XX -DSTM32F40_41xxx-o ..\obj\bsp_cpld4064.o --omf_browse ..\obj\bsp_cpld4064.crf --depend ..\obj\bsp_cpld4064.d)
 F (..\App\BSP\bsp_gprs.c)(0x5640B602)(-c --cpu Cortex-M4 -D__MICROLIB -g -O2 --apcs=interwork -I..\App -I..\App\BSP -I..\LIB\INC -I..\LIB\SRC -I..\emWin\Config -I..\emWin\inc -I..\emWin\Lib -I..\uCOSIII\uC-CPU -I..\uCOSIII\uC-LIB -I..\uCOSIII\uC-Serial\Driver -I..\uCOSIII\uC-Serial\Line -I..\uCOSIII\uC-Serial\Source -I..\uCOSIII\uC-Serial\OS -I..\uCOSIII\uCOS-III\Ports -I..\uCOSIII\uCOS-III\Source -I..\emWin\Demo -I..\App\APP -I..\Protocol\drv\inc -I..\Protocol\drv\src -I..\Protocol\Protocol -I..\Protocol\sys-I "D:\Program Files\mdk\ARM\RV31\INC"-I "D:\Program Files\mdk\ARM\CMSIS\Include"-I "D:\Program Files\mdk\ARM\Inc\ST\STM32F4xx"-DUSE_STDPERIPH_DRIVER -DSTM32F4XX -DSTM32F40_41xxx-o ..\obj\bsp_gprs.o --omf_browse ..\obj\bsp_gprs.crf --depend ..\obj\bsp_gprs.d)
-F (..\App\BSP\bsp_io_control.c)(0x5640B602)(-c --cpu Cortex-M4 -D__MICROLIB -g -O2 --apcs=interwork -I..\App -I..\App\BSP -I..\LIB\INC -I..\LIB\SRC -I..\emWin\Config -I..\emWin\inc -I..\emWin\Lib -I..\uCOSIII\uC-CPU -I..\uCOSIII\uC-LIB -I..\uCOSIII\uC-Serial\Driver -I..\uCOSIII\uC-Serial\Line -I..\uCOSIII\uC-Serial\Source -I..\uCOSIII\uC-Serial\OS -I..\uCOSIII\uCOS-III\Ports -I..\uCOSIII\uCOS-III\Source -I..\emWin\Demo -I..\App\APP -I..\Protocol\drv\inc -I..\Protocol\drv\src -I..\Protocol\Protocol -I..\Protocol\sys-I "D:\Program Files\mdk\ARM\RV31\INC"-I "D:\Program Files\mdk\ARM\CMSIS\Include"-I "D:\Program Files\mdk\ARM\Inc\ST\STM32F4xx"-DUSE_STDPERIPH_DRIVER -DSTM32F4XX -DSTM32F40_41xxx-o ..\obj\bsp_io_control.o --omf_browse ..\obj\bsp_io_control.crf --depend ..\obj\bsp_io_control.d)
-I (E:\PROJECT\RD15002WV\RD15002WV\Freq\App\includes.h)(0x5673AEE5)
+F (..\App\BSP\bsp_io_control.c)(0x567EA369)(-c --cpu Cortex-M4 -D__MICROLIB -g -O2 --apcs=interwork -I..\App -I..\App\BSP -I..\LIB\INC -I..\LIB\SRC -I..\emWin\Config -I..\emWin\inc -I..\emWin\Lib -I..\uCOSIII\uC-CPU -I..\uCOSIII\uC-LIB -I..\uCOSIII\uC-Serial\Driver -I..\uCOSIII\uC-Serial\Line -I..\uCOSIII\uC-Serial\Source -I..\uCOSIII\uC-Serial\OS -I..\uCOSIII\uCOS-III\Ports -I..\uCOSIII\uCOS-III\Source -I..\emWin\Demo -I..\App\APP -I..\Protocol\drv\inc -I..\Protocol\drv\src -I..\Protocol\Protocol -I..\Protocol\sys-I "D:\Program Files\mdk\ARM\RV31\INC"-I "D:\Program Files\mdk\ARM\CMSIS\Include"-I "D:\Program Files\mdk\ARM\Inc\ST\STM32F4xx"-DUSE_STDPERIPH_DRIVER -DSTM32F4XX -DSTM32F40_41xxx-o ..\obj\bsp_io_control.o --omf_browse ..\obj\bsp_io_control.crf --depend ..\obj\bsp_io_control.d)
+I (E:\PROJECT\RD15002WV\RD15002WV\Freq\App\includes.h)(0x567E821B)
 I (D:\Program Files\mdk\ARM\ARMCC\include\stdarg.h)(0x51C7B744)
 I (D:\Program Files\mdk\ARM\ARMCC\include\stdio.h)(0x51C7B744)
 I (D:\Program Files\mdk\ARM\ARMCC\include\stdlib.h)(0x51C7B744)
@@ -714,14 +724,15 @@ I (E:\PROJECT\RD15002WV\RD15002WV\Freq\LIB\INC\stm32f4xx_usart.h)(0x5640B602)
 I (E:\PROJECT\RD15002WV\RD15002WV\Freq\LIB\INC\stm32f4xx_wwdg.h)(0x5640B602)
 I (E:\PROJECT\RD15002WV\RD15002WV\Freq\LIB\INC\misc.h)(0x5640B602)
 I (E:\PROJECT\RD15002WV\RD15002WV\Freq\App\bsp.h)(0x5640B602)
-I (E:\PROJECT\RD15002WV\RD15002WV\Freq\App\BSP\bsp_init.h)(0x5673ADCE)
-I (E:\PROJECT\RD15002WV\RD15002WV\Freq\App\BSP\bsp_usart.h)(0x5640B602)
+I (E:\PROJECT\RD15002WV\RD15002WV\Freq\App\BSP\bsp_init.h)(0x5673C598)
+I (E:\PROJECT\RD15002WV\RD15002WV\Freq\App\BSP\bsp_usart.h)(0x567EAC78)
 I (E:\PROJECT\RD15002WV\RD15002WV\Freq\App\BSP\bsp_ltc2402.h)(0x564444FE)
 I (E:\PROJECT\RD15002WV\RD15002WV\Freq\App\BSP\bsp_sst25vf064.h)(0x5640B602)
-I (E:\PROJECT\RD15002WV\RD15002WV\Freq\App\BSP\bsp_rtc.h)(0x5640B602)
-I (E:\PROJECT\RD15002WV\RD15002WV\Freq\App\BSP\bsp_io_control.h)(0x5640B602)
+I (E:\PROJECT\RD15002WV\RD15002WV\Freq\App\BSP\bsp_rtc.h)(0x567E5101)
+I (E:\PROJECT\RD15002WV\RD15002WV\Freq\App\BSP\bsp_io_control.h)(0x567E87F1)
 I (E:\PROJECT\RD15002WV\RD15002WV\Freq\App\BSP\bsp_485.h)(0x56455136)
-I (E:\PROJECT\RD15002WV\RD15002WV\Freq\App\APP\app.h)(0x5673BC5A)
+I (E:\PROJECT\RD15002WV\RD15002WV\Freq\App\BSP\flash.h)(0x557F714A)
+I (E:\PROJECT\RD15002WV\RD15002WV\Freq\App\APP\app.h)(0x567EA5DB)
 I (E:\PROJECT\RD15002WV\RD15002WV\Freq\App\APP\FreqMeasurement.h)(0x5640B602)
 I (E:\PROJECT\RD15002WV\RD15002WV\Freq\App\APP\Tools.h)(0x5673AE1E)
 I (E:\PROJECT\RD15002WV\RD15002WV\Freq\Protocol\Protocol\AppMain.h)(0x56415017)
@@ -729,9 +740,9 @@ I (E:\PROJECT\RD15002WV\RD15002WV\Freq\Protocol\sys\kernel.h)(0x5673A8F5)
 I (E:\PROJECT\RD15002WV\RD15002WV\Freq\Protocol\sys\tool.h)(0x55705E61)
 I (E:\PROJECT\RD15002WV\RD15002WV\Freq\Protocol\sys\type32.h)(0x5571477F)
 I (E:\PROJECT\RD15002WV\RD15002WV\Freq\Protocol\sys\archDef.h)(0x4E979D2D)
-I (E:\PROJECT\RD15002WV\RD15002WV\Freq\Protocol\drv\inc\Protocol.h)(0x5673AB66)
-I (E:\PROJECT\RD15002WV\RD15002WV\Freq\Protocol\drv\inc\usart_serial.h)(0x5673AB36)
-F (..\App\BSP\stm32f4xx_it.c)(0x5673ADCE)(-c --cpu Cortex-M4 -D__MICROLIB -g -O2 --apcs=interwork -I..\App -I..\App\BSP -I..\LIB\INC -I..\LIB\SRC -I..\emWin\Config -I..\emWin\inc -I..\emWin\Lib -I..\uCOSIII\uC-CPU -I..\uCOSIII\uC-LIB -I..\uCOSIII\uC-Serial\Driver -I..\uCOSIII\uC-Serial\Line -I..\uCOSIII\uC-Serial\Source -I..\uCOSIII\uC-Serial\OS -I..\uCOSIII\uCOS-III\Ports -I..\uCOSIII\uCOS-III\Source -I..\emWin\Demo -I..\App\APP -I..\Protocol\drv\inc -I..\Protocol\drv\src -I..\Protocol\Protocol -I..\Protocol\sys-I "D:\Program Files\mdk\ARM\RV31\INC"-I "D:\Program Files\mdk\ARM\CMSIS\Include"-I "D:\Program Files\mdk\ARM\Inc\ST\STM32F4xx"-DUSE_STDPERIPH_DRIVER -DSTM32F4XX -DSTM32F40_41xxx-o ..\obj\stm32f4xx_it.o --omf_browse ..\obj\stm32f4xx_it.crf --depend ..\obj\stm32f4xx_it.d)
+I (E:\PROJECT\RD15002WV\RD15002WV\Freq\Protocol\drv\inc\Protocol.h)(0x5673C452)
+I (E:\PROJECT\RD15002WV\RD15002WV\Freq\Protocol\drv\inc\usart_serial.h)(0x5673C41A)
+F (..\App\BSP\stm32f4xx_it.c)(0x56808871)(-c --cpu Cortex-M4 -D__MICROLIB -g -O2 --apcs=interwork -I..\App -I..\App\BSP -I..\LIB\INC -I..\LIB\SRC -I..\emWin\Config -I..\emWin\inc -I..\emWin\Lib -I..\uCOSIII\uC-CPU -I..\uCOSIII\uC-LIB -I..\uCOSIII\uC-Serial\Driver -I..\uCOSIII\uC-Serial\Line -I..\uCOSIII\uC-Serial\Source -I..\uCOSIII\uC-Serial\OS -I..\uCOSIII\uCOS-III\Ports -I..\uCOSIII\uCOS-III\Source -I..\emWin\Demo -I..\App\APP -I..\Protocol\drv\inc -I..\Protocol\drv\src -I..\Protocol\Protocol -I..\Protocol\sys-I "D:\Program Files\mdk\ARM\RV31\INC"-I "D:\Program Files\mdk\ARM\CMSIS\Include"-I "D:\Program Files\mdk\ARM\Inc\ST\STM32F4xx"-DUSE_STDPERIPH_DRIVER -DSTM32F4XX -DSTM32F40_41xxx-o ..\obj\stm32f4xx_it.o --omf_browse ..\obj\stm32f4xx_it.crf --depend ..\obj\stm32f4xx_it.d)
 I (E:\PROJECT\RD15002WV\RD15002WV\Freq\App\BSP\stm32f4xx_it.h)(0x5640B602)
 I (E:\PROJECT\RD15002WV\RD15002WV\Freq\App\BSP\stm32f4xx.h)(0x5640B602)
 I (D:\Program Files\mdk\ARM\CMSIS\Include\core_cm4.h)(0x51C7B54A)
@@ -757,7 +768,7 @@ I (E:\PROJECT\RD15002WV\RD15002WV\Freq\LIB\INC\stm32f4xx_usart.h)(0x5640B602)
 I (E:\PROJECT\RD15002WV\RD15002WV\Freq\LIB\INC\stm32f4xx_wwdg.h)(0x5640B602)
 I (E:\PROJECT\RD15002WV\RD15002WV\Freq\LIB\INC\misc.h)(0x5640B602)
 I (D:\Program Files\mdk\ARM\ARMCC\include\stdio.h)(0x51C7B744)
-I (E:\PROJECT\RD15002WV\RD15002WV\Freq\App\includes.h)(0x5673AEE5)
+I (E:\PROJECT\RD15002WV\RD15002WV\Freq\App\includes.h)(0x567E821B)
 I (D:\Program Files\mdk\ARM\ARMCC\include\stdarg.h)(0x51C7B744)
 I (D:\Program Files\mdk\ARM\ARMCC\include\stdlib.h)(0x51C7B744)
 I (D:\Program Files\mdk\ARM\ARMCC\include\math.h)(0x51C7B744)
@@ -777,14 +788,15 @@ I (E:\PROJECT\RD15002WV\RD15002WV\Freq\App\os_cfg.h)(0x5640B602)
 I (E:\PROJECT\RD15002WV\RD15002WV\Freq\uCOSIII\uCOS-III\Source\os_type.h)(0x5640B602)
 I (E:\PROJECT\RD15002WV\RD15002WV\Freq\uCOSIII\uCOS-III\Ports\os_cpu.h)(0x5640B602)
 I (E:\PROJECT\RD15002WV\RD15002WV\Freq\App\bsp.h)(0x5640B602)
-I (E:\PROJECT\RD15002WV\RD15002WV\Freq\App\BSP\bsp_init.h)(0x5673ADCE)
-I (E:\PROJECT\RD15002WV\RD15002WV\Freq\App\BSP\bsp_usart.h)(0x5640B602)
+I (E:\PROJECT\RD15002WV\RD15002WV\Freq\App\BSP\bsp_init.h)(0x5673C598)
+I (E:\PROJECT\RD15002WV\RD15002WV\Freq\App\BSP\bsp_usart.h)(0x567EAC78)
 I (E:\PROJECT\RD15002WV\RD15002WV\Freq\App\BSP\bsp_ltc2402.h)(0x564444FE)
 I (E:\PROJECT\RD15002WV\RD15002WV\Freq\App\BSP\bsp_sst25vf064.h)(0x5640B602)
-I (E:\PROJECT\RD15002WV\RD15002WV\Freq\App\BSP\bsp_rtc.h)(0x5640B602)
-I (E:\PROJECT\RD15002WV\RD15002WV\Freq\App\BSP\bsp_io_control.h)(0x5640B602)
+I (E:\PROJECT\RD15002WV\RD15002WV\Freq\App\BSP\bsp_rtc.h)(0x567E5101)
+I (E:\PROJECT\RD15002WV\RD15002WV\Freq\App\BSP\bsp_io_control.h)(0x567E87F1)
 I (E:\PROJECT\RD15002WV\RD15002WV\Freq\App\BSP\bsp_485.h)(0x56455136)
-I (E:\PROJECT\RD15002WV\RD15002WV\Freq\App\APP\app.h)(0x5673BC5A)
+I (E:\PROJECT\RD15002WV\RD15002WV\Freq\App\BSP\flash.h)(0x557F714A)
+I (E:\PROJECT\RD15002WV\RD15002WV\Freq\App\APP\app.h)(0x567EA5DB)
 I (E:\PROJECT\RD15002WV\RD15002WV\Freq\App\APP\FreqMeasurement.h)(0x5640B602)
 I (E:\PROJECT\RD15002WV\RD15002WV\Freq\App\APP\Tools.h)(0x5673AE1E)
 I (E:\PROJECT\RD15002WV\RD15002WV\Freq\Protocol\Protocol\AppMain.h)(0x56415017)
@@ -792,8 +804,8 @@ I (E:\PROJECT\RD15002WV\RD15002WV\Freq\Protocol\sys\kernel.h)(0x5673A8F5)
 I (E:\PROJECT\RD15002WV\RD15002WV\Freq\Protocol\sys\tool.h)(0x55705E61)
 I (E:\PROJECT\RD15002WV\RD15002WV\Freq\Protocol\sys\type32.h)(0x5571477F)
 I (E:\PROJECT\RD15002WV\RD15002WV\Freq\Protocol\sys\archDef.h)(0x4E979D2D)
-I (E:\PROJECT\RD15002WV\RD15002WV\Freq\Protocol\drv\inc\Protocol.h)(0x5673AB66)
-I (E:\PROJECT\RD15002WV\RD15002WV\Freq\Protocol\drv\inc\usart_serial.h)(0x5673AB36)
+I (E:\PROJECT\RD15002WV\RD15002WV\Freq\Protocol\drv\inc\Protocol.h)(0x5673C452)
+I (E:\PROJECT\RD15002WV\RD15002WV\Freq\Protocol\drv\inc\usart_serial.h)(0x5673C41A)
 F (..\App\BSP\stm32f4xx.h)(0x5640B602)()
 F (..\App\BSP\stm32f4xx_conf.h)(0x5645500B)()
 F (..\App\BSP\system_stm32f4xx.c)(0x5640B602)(-c --cpu Cortex-M4 -D__MICROLIB -g -O2 --apcs=interwork -I..\App -I..\App\BSP -I..\LIB\INC -I..\LIB\SRC -I..\emWin\Config -I..\emWin\inc -I..\emWin\Lib -I..\uCOSIII\uC-CPU -I..\uCOSIII\uC-LIB -I..\uCOSIII\uC-Serial\Driver -I..\uCOSIII\uC-Serial\Line -I..\uCOSIII\uC-Serial\Source -I..\uCOSIII\uC-Serial\OS -I..\uCOSIII\uCOS-III\Ports -I..\uCOSIII\uCOS-III\Source -I..\emWin\Demo -I..\App\APP -I..\Protocol\drv\inc -I..\Protocol\drv\src -I..\Protocol\Protocol -I..\Protocol\sys-I "D:\Program Files\mdk\ARM\RV31\INC"-I "D:\Program Files\mdk\ARM\CMSIS\Include"-I "D:\Program Files\mdk\ARM\Inc\ST\STM32F4xx"-DUSE_STDPERIPH_DRIVER -DSTM32F4XX -DSTM32F40_41xxx-o ..\obj\system_stm32f4xx.o --omf_browse ..\obj\system_stm32f4xx.crf --depend ..\obj\system_stm32f4xx.d)
@@ -820,7 +832,7 @@ I (E:\PROJECT\RD15002WV\RD15002WV\Freq\LIB\INC\stm32f4xx_tim.h)(0x5640B602)
 I (E:\PROJECT\RD15002WV\RD15002WV\Freq\LIB\INC\stm32f4xx_usart.h)(0x5640B602)
 I (E:\PROJECT\RD15002WV\RD15002WV\Freq\LIB\INC\stm32f4xx_wwdg.h)(0x5640B602)
 I (E:\PROJECT\RD15002WV\RD15002WV\Freq\LIB\INC\misc.h)(0x5640B602)
-F (..\LIB\startup_stm32f40_41xxx.s)(0x5673BB52)(--cpu Cortex-M4 -g --apcs=interwork --pd "__MICROLIB SETA 1"-I "D:\Program Files\mdk\ARM\RV31\INC"-I "D:\Program Files\mdk\ARM\CMSIS\Include"-I "D:\Program Files\mdk\ARM\Inc\ST\STM32F4xx"--list ..\list\startup_stm32f40_41xxx.lst --xref -o ..\obj\startup_stm32f40_41xxx.o --depend ..\obj\startup_stm32f40_41xxx.d)
+F (..\LIB\startup_stm32f40_41xxx.s)(0x568086FC)(--cpu Cortex-M4 -g --apcs=interwork --pd "__MICROLIB SETA 1"-I "D:\Program Files\mdk\ARM\RV31\INC"-I "D:\Program Files\mdk\ARM\CMSIS\Include"-I "D:\Program Files\mdk\ARM\Inc\ST\STM32F4xx"--list ..\list\startup_stm32f40_41xxx.lst --xref -o ..\obj\startup_stm32f40_41xxx.o --depend ..\obj\startup_stm32f40_41xxx.d)
 F (..\LIB\SRC\misc.c)(0x5640B602)(-c --cpu Cortex-M4 -D__MICROLIB -g -O2 --apcs=interwork -I..\App -I..\App\BSP -I..\LIB\INC -I..\LIB\SRC -I..\emWin\Config -I..\emWin\inc -I..\emWin\Lib -I..\uCOSIII\uC-CPU -I..\uCOSIII\uC-LIB -I..\uCOSIII\uC-Serial\Driver -I..\uCOSIII\uC-Serial\Line -I..\uCOSIII\uC-Serial\Source -I..\uCOSIII\uC-Serial\OS -I..\uCOSIII\uCOS-III\Ports -I..\uCOSIII\uCOS-III\Source -I..\emWin\Demo -I..\App\APP -I..\Protocol\drv\inc -I..\Protocol\drv\src -I..\Protocol\Protocol -I..\Protocol\sys-I "D:\Program Files\mdk\ARM\RV31\INC"-I "D:\Program Files\mdk\ARM\CMSIS\Include"-I "D:\Program Files\mdk\ARM\Inc\ST\STM32F4xx"-DUSE_STDPERIPH_DRIVER -DSTM32F4XX -DSTM32F40_41xxx-o ..\obj\misc.o --omf_browse ..\obj\misc.crf --depend ..\obj\misc.d)
 I (E:\PROJECT\RD15002WV\RD15002WV\Freq\LIB\INC\misc.h)(0x5640B602)
 I (E:\PROJECT\RD15002WV\RD15002WV\Freq\App\BSP\stm32f4xx.h)(0x5640B602)
@@ -1493,7 +1505,7 @@ I (E:\PROJECT\RD15002WV\RD15002WV\Freq\uCOSIII\uC-LIB\lib_def.h)(0x5640B602)
 I (E:\PROJECT\RD15002WV\RD15002WV\Freq\uCOSIII\uC-LIB\lib_ascii.h)(0x5640B602)
 I (E:\PROJECT\RD15002WV\RD15002WV\Freq\App\lib_cfg.h)(0x5640B602)
 F (..\uCOSIII\uC-LIB\lib_str.h)(0x5640B602)()
-F (..\Protocol\Protocol\AppMain.c)(0x5673BC4F)(-c --cpu Cortex-M4 -D__MICROLIB -g -O2 --apcs=interwork -I..\App -I..\App\BSP -I..\LIB\INC -I..\LIB\SRC -I..\emWin\Config -I..\emWin\inc -I..\emWin\Lib -I..\uCOSIII\uC-CPU -I..\uCOSIII\uC-LIB -I..\uCOSIII\uC-Serial\Driver -I..\uCOSIII\uC-Serial\Line -I..\uCOSIII\uC-Serial\Source -I..\uCOSIII\uC-Serial\OS -I..\uCOSIII\uCOS-III\Ports -I..\uCOSIII\uCOS-III\Source -I..\emWin\Demo -I..\App\APP -I..\Protocol\drv\inc -I..\Protocol\drv\src -I..\Protocol\Protocol -I..\Protocol\sys-I "D:\Program Files\mdk\ARM\RV31\INC"-I "D:\Program Files\mdk\ARM\CMSIS\Include"-I "D:\Program Files\mdk\ARM\Inc\ST\STM32F4xx"-DUSE_STDPERIPH_DRIVER -DSTM32F4XX -DSTM32F40_41xxx-o ..\obj\appmain.o --omf_browse ..\obj\appmain.crf --depend ..\obj\appmain.d)
+F (..\Protocol\Protocol\AppMain.c)(0x568088B3)(-c --cpu Cortex-M4 -D__MICROLIB -g -O2 --apcs=interwork -I..\App -I..\App\BSP -I..\LIB\INC -I..\LIB\SRC -I..\emWin\Config -I..\emWin\inc -I..\emWin\Lib -I..\uCOSIII\uC-CPU -I..\uCOSIII\uC-LIB -I..\uCOSIII\uC-Serial\Driver -I..\uCOSIII\uC-Serial\Line -I..\uCOSIII\uC-Serial\Source -I..\uCOSIII\uC-Serial\OS -I..\uCOSIII\uCOS-III\Ports -I..\uCOSIII\uCOS-III\Source -I..\emWin\Demo -I..\App\APP -I..\Protocol\drv\inc -I..\Protocol\drv\src -I..\Protocol\Protocol -I..\Protocol\sys-I "D:\Program Files\mdk\ARM\RV31\INC"-I "D:\Program Files\mdk\ARM\CMSIS\Include"-I "D:\Program Files\mdk\ARM\Inc\ST\STM32F4xx"-DUSE_STDPERIPH_DRIVER -DSTM32F4XX -DSTM32F40_41xxx-o ..\obj\appmain.o --omf_browse ..\obj\appmain.crf --depend ..\obj\appmain.d)
 I (E:\PROJECT\RD15002WV\RD15002WV\Freq\Protocol\Protocol\AppMain.h)(0x56415017)
 I (E:\PROJECT\RD15002WV\RD15002WV\Freq\Protocol\sys\kernel.h)(0x5673A8F5)
 I (E:\PROJECT\RD15002WV\RD15002WV\Freq\Protocol\sys\tool.h)(0x55705E61)
@@ -1525,11 +1537,39 @@ I (E:\PROJECT\RD15002WV\RD15002WV\Freq\LIB\INC\stm32f4xx_tim.h)(0x5640B602)
 I (E:\PROJECT\RD15002WV\RD15002WV\Freq\LIB\INC\stm32f4xx_usart.h)(0x5640B602)
 I (E:\PROJECT\RD15002WV\RD15002WV\Freq\LIB\INC\stm32f4xx_wwdg.h)(0x5640B602)
 I (E:\PROJECT\RD15002WV\RD15002WV\Freq\LIB\INC\misc.h)(0x5640B602)
-I (E:\PROJECT\RD15002WV\RD15002WV\Freq\Protocol\drv\inc\Protocol.h)(0x5673AB66)
-I (E:\PROJECT\RD15002WV\RD15002WV\Freq\Protocol\drv\inc\usart_serial.h)(0x5673AB36)
+I (E:\PROJECT\RD15002WV\RD15002WV\Freq\Protocol\drv\inc\Protocol.h)(0x5673C452)
+I (E:\PROJECT\RD15002WV\RD15002WV\Freq\Protocol\drv\inc\usart_serial.h)(0x5673C41A)
 I (E:\PROJECT\RD15002WV\RD15002WV\Freq\App\APP\Tools.h)(0x5673AE1E)
-F (..\Protocol\drv\src\Protocol.c)(0x5673AB66)(-c --cpu Cortex-M4 -D__MICROLIB -g -O2 --apcs=interwork -I..\App -I..\App\BSP -I..\LIB\INC -I..\LIB\SRC -I..\emWin\Config -I..\emWin\inc -I..\emWin\Lib -I..\uCOSIII\uC-CPU -I..\uCOSIII\uC-LIB -I..\uCOSIII\uC-Serial\Driver -I..\uCOSIII\uC-Serial\Line -I..\uCOSIII\uC-Serial\Source -I..\uCOSIII\uC-Serial\OS -I..\uCOSIII\uCOS-III\Ports -I..\uCOSIII\uCOS-III\Source -I..\emWin\Demo -I..\App\APP -I..\Protocol\drv\inc -I..\Protocol\drv\src -I..\Protocol\Protocol -I..\Protocol\sys-I "D:\Program Files\mdk\ARM\RV31\INC"-I "D:\Program Files\mdk\ARM\CMSIS\Include"-I "D:\Program Files\mdk\ARM\Inc\ST\STM32F4xx"-DUSE_STDPERIPH_DRIVER -DSTM32F4XX -DSTM32F40_41xxx-o ..\obj\protocol.o --omf_browse ..\obj\protocol.crf --depend ..\obj\protocol.d)
-I (E:\PROJECT\RD15002WV\RD15002WV\Freq\Protocol\drv\inc\Protocol.h)(0x5673AB66)
+I (E:\PROJECT\RD15002WV\RD15002WV\Freq\App\includes.h)(0x567E821B)
+I (D:\Program Files\mdk\ARM\ARMCC\include\stdarg.h)(0x51C7B744)
+I (D:\Program Files\mdk\ARM\ARMCC\include\math.h)(0x51C7B744)
+I (E:\PROJECT\RD15002WV\RD15002WV\Freq\uCOSIII\uC-CPU\cpu.h)(0x5640B602)
+I (E:\PROJECT\RD15002WV\RD15002WV\Freq\uCOSIII\uC-CPU\cpu_def.h)(0x5640B602)
+I (E:\PROJECT\RD15002WV\RD15002WV\Freq\App\cpu_cfg.h)(0x5640B602)
+I (E:\PROJECT\RD15002WV\RD15002WV\Freq\uCOSIII\uC-LIB\lib_def.h)(0x5640B602)
+I (E:\PROJECT\RD15002WV\RD15002WV\Freq\uCOSIII\uC-LIB\lib_ascii.h)(0x5640B602)
+I (E:\PROJECT\RD15002WV\RD15002WV\Freq\uCOSIII\uC-LIB\lib_math.h)(0x5640B602)
+I (E:\PROJECT\RD15002WV\RD15002WV\Freq\uCOSIII\uC-CPU\cpu_core.h)(0x5640B602)
+I (E:\PROJECT\RD15002WV\RD15002WV\Freq\uCOSIII\uC-LIB\lib_mem.h)(0x5640B602)
+I (E:\PROJECT\RD15002WV\RD15002WV\Freq\App\lib_cfg.h)(0x5640B602)
+I (E:\PROJECT\RD15002WV\RD15002WV\Freq\uCOSIII\uC-LIB\lib_str.h)(0x5640B602)
+I (E:\PROJECT\RD15002WV\RD15002WV\Freq\uCOSIII\uCOS-III\Source\os.h)(0x5640B602)
+I (E:\PROJECT\RD15002WV\RD15002WV\Freq\App\os_cfg.h)(0x5640B602)
+I (E:\PROJECT\RD15002WV\RD15002WV\Freq\uCOSIII\uCOS-III\Source\os_type.h)(0x5640B602)
+I (E:\PROJECT\RD15002WV\RD15002WV\Freq\uCOSIII\uCOS-III\Ports\os_cpu.h)(0x5640B602)
+I (E:\PROJECT\RD15002WV\RD15002WV\Freq\App\bsp.h)(0x5640B602)
+I (E:\PROJECT\RD15002WV\RD15002WV\Freq\App\BSP\bsp_init.h)(0x5673C598)
+I (E:\PROJECT\RD15002WV\RD15002WV\Freq\App\BSP\bsp_usart.h)(0x567EAC78)
+I (E:\PROJECT\RD15002WV\RD15002WV\Freq\App\BSP\bsp_ltc2402.h)(0x564444FE)
+I (E:\PROJECT\RD15002WV\RD15002WV\Freq\App\BSP\bsp_sst25vf064.h)(0x5640B602)
+I (E:\PROJECT\RD15002WV\RD15002WV\Freq\App\BSP\bsp_rtc.h)(0x567E5101)
+I (E:\PROJECT\RD15002WV\RD15002WV\Freq\App\BSP\bsp_io_control.h)(0x567E87F1)
+I (E:\PROJECT\RD15002WV\RD15002WV\Freq\App\BSP\bsp_485.h)(0x56455136)
+I (E:\PROJECT\RD15002WV\RD15002WV\Freq\App\BSP\flash.h)(0x557F714A)
+I (E:\PROJECT\RD15002WV\RD15002WV\Freq\App\APP\app.h)(0x567EA5DB)
+I (E:\PROJECT\RD15002WV\RD15002WV\Freq\App\APP\FreqMeasurement.h)(0x5640B602)
+F (..\Protocol\drv\src\Protocol.c)(0x56777021)(-c --cpu Cortex-M4 -D__MICROLIB -g -O2 --apcs=interwork -I..\App -I..\App\BSP -I..\LIB\INC -I..\LIB\SRC -I..\emWin\Config -I..\emWin\inc -I..\emWin\Lib -I..\uCOSIII\uC-CPU -I..\uCOSIII\uC-LIB -I..\uCOSIII\uC-Serial\Driver -I..\uCOSIII\uC-Serial\Line -I..\uCOSIII\uC-Serial\Source -I..\uCOSIII\uC-Serial\OS -I..\uCOSIII\uCOS-III\Ports -I..\uCOSIII\uCOS-III\Source -I..\emWin\Demo -I..\App\APP -I..\Protocol\drv\inc -I..\Protocol\drv\src -I..\Protocol\Protocol -I..\Protocol\sys-I "D:\Program Files\mdk\ARM\RV31\INC"-I "D:\Program Files\mdk\ARM\CMSIS\Include"-I "D:\Program Files\mdk\ARM\Inc\ST\STM32F4xx"-DUSE_STDPERIPH_DRIVER -DSTM32F4XX -DSTM32F40_41xxx-o ..\obj\protocol.o --omf_browse ..\obj\protocol.crf --depend ..\obj\protocol.d)
+I (E:\PROJECT\RD15002WV\RD15002WV\Freq\Protocol\drv\inc\Protocol.h)(0x5673C452)
 I (E:\PROJECT\RD15002WV\RD15002WV\Freq\Protocol\sys\kernel.h)(0x5673A8F5)
 I (E:\PROJECT\RD15002WV\RD15002WV\Freq\Protocol\sys\tool.h)(0x55705E61)
 I (E:\PROJECT\RD15002WV\RD15002WV\Freq\Protocol\sys\type32.h)(0x5571477F)
@@ -1560,8 +1600,8 @@ I (E:\PROJECT\RD15002WV\RD15002WV\Freq\LIB\INC\stm32f4xx_tim.h)(0x5640B602)
 I (E:\PROJECT\RD15002WV\RD15002WV\Freq\LIB\INC\stm32f4xx_usart.h)(0x5640B602)
 I (E:\PROJECT\RD15002WV\RD15002WV\Freq\LIB\INC\stm32f4xx_wwdg.h)(0x5640B602)
 I (E:\PROJECT\RD15002WV\RD15002WV\Freq\LIB\INC\misc.h)(0x5640B602)
-I (E:\PROJECT\RD15002WV\RD15002WV\Freq\Protocol\drv\inc\usart_serial.h)(0x5673AB36)
-F (..\Protocol\drv\src\usart_serial.c)(0x5673BA08)(-c --cpu Cortex-M4 -D__MICROLIB -g -O2 --apcs=interwork -I..\App -I..\App\BSP -I..\LIB\INC -I..\LIB\SRC -I..\emWin\Config -I..\emWin\inc -I..\emWin\Lib -I..\uCOSIII\uC-CPU -I..\uCOSIII\uC-LIB -I..\uCOSIII\uC-Serial\Driver -I..\uCOSIII\uC-Serial\Line -I..\uCOSIII\uC-Serial\Source -I..\uCOSIII\uC-Serial\OS -I..\uCOSIII\uCOS-III\Ports -I..\uCOSIII\uCOS-III\Source -I..\emWin\Demo -I..\App\APP -I..\Protocol\drv\inc -I..\Protocol\drv\src -I..\Protocol\Protocol -I..\Protocol\sys-I "D:\Program Files\mdk\ARM\RV31\INC"-I "D:\Program Files\mdk\ARM\CMSIS\Include"-I "D:\Program Files\mdk\ARM\Inc\ST\STM32F4xx"-DUSE_STDPERIPH_DRIVER -DSTM32F4XX -DSTM32F40_41xxx-o ..\obj\usart_serial.o --omf_browse ..\obj\usart_serial.crf --depend ..\obj\usart_serial.d)
+I (E:\PROJECT\RD15002WV\RD15002WV\Freq\Protocol\drv\inc\usart_serial.h)(0x5673C41A)
+F (..\Protocol\drv\src\usart_serial.c)(0x567E8DCE)(-c --cpu Cortex-M4 -D__MICROLIB -g -O2 --apcs=interwork -I..\App -I..\App\BSP -I..\LIB\INC -I..\LIB\SRC -I..\emWin\Config -I..\emWin\inc -I..\emWin\Lib -I..\uCOSIII\uC-CPU -I..\uCOSIII\uC-LIB -I..\uCOSIII\uC-Serial\Driver -I..\uCOSIII\uC-Serial\Line -I..\uCOSIII\uC-Serial\Source -I..\uCOSIII\uC-Serial\OS -I..\uCOSIII\uCOS-III\Ports -I..\uCOSIII\uCOS-III\Source -I..\emWin\Demo -I..\App\APP -I..\Protocol\drv\inc -I..\Protocol\drv\src -I..\Protocol\Protocol -I..\Protocol\sys-I "D:\Program Files\mdk\ARM\RV31\INC"-I "D:\Program Files\mdk\ARM\CMSIS\Include"-I "D:\Program Files\mdk\ARM\Inc\ST\STM32F4xx"-DUSE_STDPERIPH_DRIVER -DSTM32F4XX -DSTM32F40_41xxx-o ..\obj\usart_serial.o --omf_browse ..\obj\usart_serial.crf --depend ..\obj\usart_serial.d)
 I (E:\PROJECT\RD15002WV\RD15002WV\Freq\Protocol\sys\kernel.h)(0x5673A8F5)
 I (E:\PROJECT\RD15002WV\RD15002WV\Freq\Protocol\sys\tool.h)(0x55705E61)
 I (E:\PROJECT\RD15002WV\RD15002WV\Freq\Protocol\sys\type32.h)(0x5571477F)
@@ -1592,8 +1632,8 @@ I (E:\PROJECT\RD15002WV\RD15002WV\Freq\LIB\INC\stm32f4xx_tim.h)(0x5640B602)
 I (E:\PROJECT\RD15002WV\RD15002WV\Freq\LIB\INC\stm32f4xx_usart.h)(0x5640B602)
 I (E:\PROJECT\RD15002WV\RD15002WV\Freq\LIB\INC\stm32f4xx_wwdg.h)(0x5640B602)
 I (E:\PROJECT\RD15002WV\RD15002WV\Freq\LIB\INC\misc.h)(0x5640B602)
-I (E:\PROJECT\RD15002WV\RD15002WV\Freq\Protocol\drv\inc\Protocol.h)(0x5673AB66)
-I (E:\PROJECT\RD15002WV\RD15002WV\Freq\Protocol\drv\inc\usart_serial.h)(0x5673AB36)
+I (E:\PROJECT\RD15002WV\RD15002WV\Freq\Protocol\drv\inc\Protocol.h)(0x5673C452)
+I (E:\PROJECT\RD15002WV\RD15002WV\Freq\Protocol\drv\inc\usart_serial.h)(0x5673C41A)
 F (..\Protocol\sys\kernel.c)(0x5673A586)(-c --cpu Cortex-M4 -D__MICROLIB -g -O2 --apcs=interwork -I..\App -I..\App\BSP -I..\LIB\INC -I..\LIB\SRC -I..\emWin\Config -I..\emWin\inc -I..\emWin\Lib -I..\uCOSIII\uC-CPU -I..\uCOSIII\uC-LIB -I..\uCOSIII\uC-Serial\Driver -I..\uCOSIII\uC-Serial\Line -I..\uCOSIII\uC-Serial\Source -I..\uCOSIII\uC-Serial\OS -I..\uCOSIII\uCOS-III\Ports -I..\uCOSIII\uCOS-III\Source -I..\emWin\Demo -I..\App\APP -I..\Protocol\drv\inc -I..\Protocol\drv\src -I..\Protocol\Protocol -I..\Protocol\sys-I "D:\Program Files\mdk\ARM\RV31\INC"-I "D:\Program Files\mdk\ARM\CMSIS\Include"-I "D:\Program Files\mdk\ARM\Inc\ST\STM32F4xx"-DUSE_STDPERIPH_DRIVER -DSTM32F4XX -DSTM32F40_41xxx-o ..\obj\kernel.o --omf_browse ..\obj\kernel.crf --depend ..\obj\kernel.d)
 I (E:\PROJECT\RD15002WV\RD15002WV\Freq\Protocol\sys\kernel.h)(0x5673A8F5)
 I (E:\PROJECT\RD15002WV\RD15002WV\Freq\Protocol\sys\tool.h)(0x55705E61)
@@ -1625,5 +1665,5 @@ I (E:\PROJECT\RD15002WV\RD15002WV\Freq\LIB\INC\stm32f4xx_tim.h)(0x5640B602)
 I (E:\PROJECT\RD15002WV\RD15002WV\Freq\LIB\INC\stm32f4xx_usart.h)(0x5640B602)
 I (E:\PROJECT\RD15002WV\RD15002WV\Freq\LIB\INC\stm32f4xx_wwdg.h)(0x5640B602)
 I (E:\PROJECT\RD15002WV\RD15002WV\Freq\LIB\INC\misc.h)(0x5640B602)
-I (E:\PROJECT\RD15002WV\RD15002WV\Freq\Protocol\drv\inc\Protocol.h)(0x5673AB66)
-I (E:\PROJECT\RD15002WV\RD15002WV\Freq\Protocol\drv\inc\usart_serial.h)(0x5673AB36)
+I (E:\PROJECT\RD15002WV\RD15002WV\Freq\Protocol\drv\inc\Protocol.h)(0x5673C452)
+I (E:\PROJECT\RD15002WV\RD15002WV\Freq\Protocol\drv\inc\usart_serial.h)(0x5673C41A)

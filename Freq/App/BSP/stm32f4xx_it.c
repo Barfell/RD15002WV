@@ -19,17 +19,18 @@
 #include  <includes.h>
 #define ERR_INFO "\r\nEnter HardFault_Handler, System Halt.\r\n"
 
+//位移计想关-----------------------
 unsigned int 	CountTimes    = 0;//计时
 double 			OnFreq               = 0 ;//频率
 unsigned char 	measureflag   = 0;//测量完毕的标志
 unsigned char 	PulseNumFlag  = 0;//用于记录已经发射几个脉冲--控制个数
 extern unsigned char PulseNUM ;//发射脉冲的个数
 
-unsigned char 	PreRecvieData = 0;
-unsigned char 	Reciv[20];
-unsigned char 	RecivNum      = 0;
-unsigned char 	IsCMDflag     = 0;
-unsigned char 	UploadFlag    = 0;
+//雨量相关--------------------------
+extern unsigned char yuliang[4096];
+int yuliangcishu=0;
+
+
 
 /*
 *********************************************************************************************************
@@ -233,7 +234,7 @@ void TIM3_IRQHandler(void)
 	OSIntExit();//退出中断--ucosiii
 }
 
-
+//串口引脚，外部中断
 void EXTI9_5_IRQHandler(void)
 {
 	OSIntEnter();
@@ -246,41 +247,21 @@ void EXTI9_5_IRQHandler(void)
 
 
 
-//void USART3_IRQHandler(void)
-//{
-//	unsigned char 	RXData        = 0;
-//	OSIntEnter();
-//	
-//	if (USART_GetFlagStatus(USART3, USART_FLAG_RXNE) != RESET)
-//    {
-//		USART_ClearFlag(USART3, USART_FLAG_RXNE);
-//		RXData = USART_ReceiveData(USART3);
 
-//		if(IsCMDflag == 1)//确认是命令
-//		{
-//			Reciv[RecivNum] = RXData;
-//			if(Reciv[11] == '3' && RecivNum == 11)//第11位是1
-//				{UploadFlag = 1; RecivNum=0; IsCMDflag = 0;}
-//			else if(RecivNum == 11)
-//				{RecivNum = 0; IsCMDflag = 0;}
-//			else
-//				{RecivNum++;}
-//		}
-//		
-//		
-//		if(IsCMDflag == 0)//未确认是命令之前
-//		{
-//			if(RXData=='T' && RecivNum == 2 )	  //第3位是 "T"
-//				{Reciv[RecivNum] = RXData; IsCMDflag = 1; RecivNum++; }
-//			else if(RXData=='C' && RecivNum == 1 )//第2位是 "C"
-//				{Reciv[RecivNum] = RXData;  RecivNum++; }
-//			else if(RXData=='S' && RecivNum == 0 )//第一位是"S"
-//				{Reciv[RecivNum] = RXData;  RecivNum++; }
-//			else
-//				{RecivNum=0;IsCMDflag = 0;}
-//		}
-//	}	   	
-//	OSIntExit();
-//}
 
+//反斗式雨量计信号中断
+void EXTI0_IRQHandler(void)
+{
+	OSIntEnter();
+	if(EXTI_GetITStatus(EXTI_Line0) != RESET)
+	{
+		EXTI_ClearITPendingBit(EXTI_Line0);
+		strcat((char *)yuliang,(char *)get_time());
+				if(yuliangcishu == 250)
+				{yuliangcishu = 0,memset(yuliang,0,4096);};
+		//printf("%s",yuliang);
+
+	}
+	OSIntExit();
+}
 

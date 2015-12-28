@@ -69,6 +69,9 @@ U8 szResponse[] = "#SCTXXXXX SUCCESS\r\n";
 extern PQueueInfo pUart3QueueInfo;
 extern unsigned char finishflag;
 
+extern int yuliangcishu;
+extern char yuliang[2048];
+
 STATIC VOID AppCommunicatePort(USART_TypeDef* USARTx, U8 *pBuf, U16 u16Length)
 {	
 	UsartSend(USARTx, pBuf, u16Length);
@@ -207,7 +210,7 @@ STATIC VOID GetCurrentAppConfigure(PProtocolInfo pProtocolInfo)
 
 STATIC VOID HandleAllModule(PProtocolInfo pProtocolInfo)
 {
-	U8 szData[250] = {0};
+	U8 szData[4096] = {0};
 		
 	U8 szId[50];
 	
@@ -220,17 +223,13 @@ STATIC VOID HandleAllModule(PProtocolInfo pProtocolInfo)
 //GetNTCTemperature(LTC2402_GetResistance(8)),\
 //GetFreq(1),GetFreq(2),GetFreq(3),GetFreq(4));
 
-	sprintf((char *)szData, "#SCT%s=0x%s %s V:%f M1=%f P1=0 M2=%f P2=0 M3=%f P3=0 M4=%f P4=0 M5=%f P5=0 M6=%f P6=0 M7=%f P7=0 M8=%f P8=0%s", szDeviceName, szId,get_time(),\
-get_dev_voltage(get_adc_value()),\
-GetFreq(1),GetFreq(2),GetFreq(3),GetFreq(4),\
-GetNTCTemperature(LTC2402_GetResistance(5)),\
-GetNTCTemperature(LTC2402_GetResistance(6)),\
-GetNTCTemperature(LTC2402_GetResistance(7)),\
-GetNTCTemperature(LTC2402_GetResistance(8)),\
+sprintf((char *)szData, "#SCT%s=0x%s %s V:%f M1=%s P1=0 M2=0 P2=0 M3=0 P3=0 M4=0 P4=0 M5=0 P5=0 M6=0 P6=0 M7=0 P7=0 M8=0 P8=0%s", szDeviceName, szId,get_time(),\
+get_dev_voltage(get_adc_value()),yuliang,
 szEndInfo);
-	
+	//sentusartdata(yuliang);
+	yuliangcishu = 0;
+	memset(yuliang,0,4096);
 	HandleDataPackage(szData, strlen((char *)szData), pProtocolInfo);
-	
 }
 
 STATIC VOID HandleIndividualModule(S8 s8Value, PProtocolInfo pProtocolInfo)
@@ -412,6 +411,7 @@ VOID AppMain(VOID)
 	
 	pQueueInfo = AppConfigure(APPCOMMUNICATE_PORT);
 
+	/*修改机号------设备号*/
 	memcpy((char *)(szInquery1Cmd+3), szDeviceName, ARRAY_SIZEOF(szDeviceName));
 	memcpy((char *)(szConfigureInfo1+3), szDeviceName, ARRAY_SIZEOF(szDeviceName));
 	memcpy((char *)(szConfigureInfo2+3), szDeviceName, ARRAY_SIZEOF(szDeviceName));
@@ -424,7 +424,7 @@ VOID AppMain(VOID)
 			{
 				finishflag = 0;
 				ReadUsartData(APPCOMMUNICATE_PORT, szData, &u16Length);//读取数据
-				UsartSend(APPCOMMUNICATE_PORT, szData, u16Length);
+				//UsartSend(APPCOMMUNICATE_PORT, szData, u16Length);
 				u8Ret = HandleAppCmdProc(szData, u16Length, pProtocolInfo);//处理对应的命令
 				switch(u8Ret)
 				{

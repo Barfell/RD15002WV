@@ -12,6 +12,8 @@ static  CPU_STK  AppTaskTASK3Stk[APP_CFG_TASK_TASK3_STK_SIZE];
 
 /***************************************************************/
 PQueueInfo pUart3QueueInfo;
+//雨量相关
+char yuliang[4096];
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////
 //开始任务
@@ -114,18 +116,17 @@ void task2(void)
 void task3(void)
 {
 	OS_ERR      err;
+	
 	pUart3QueueInfo = malloc(sizeof(CQueueInfo));//申请内存
-	if(pUart3QueueInfo == NULL)
-	{
-		printf("e");
-	}
 	memset(pUart3QueueInfo, 0, sizeof(CQueueInfo));
+	
 	bsp_io_init();//IO口
 	UsartConfig();//串口设置配置
 	SW_12V(1);//电源
 	SW_5V(1);//正负电源，用于检测回波Z
 	FreqModuleInit();//测频率模块初始化
 	LTC2402Init();
+	yuliang_gpio();
 	voltage_adc_init();
 	GetFreq(1);
 	SW_VW(1);
@@ -137,50 +138,3 @@ void task3(void)
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-//	while(1)
-//	{			
-//		OSTimeDlyHMSM(0,0,30,0,OS_OPT_TIME_DLY,&err);
-////		if(UploadFlag == 1)//确认需要上传数据了
-////		{
-//			//printf("command confirmed!\r\n");
-//			FreqModuleInit();//测频率模块初始化
-//			LTC2402Init();
-//			GetFreq(1);
-//			read_dev_id(dev_ID);//读取ID			
-//sprintf(str_buff,"SCT200T15003-Time: %s\r\n\
-//SCT200T15003-ID: %s\r\n\
-//SCT200T15003-Mode: xxx minutes Internal\r\n\
-//SCT200T15003-Current voltage = %fV\r\n\
-//SCT200T15003-Channel: 5  Temperature :%f\r\n\
-//SCT200T15003-Channel: 6  Temperature :%f\r\n\
-//SCT200T15003-Channel: 7  Temperature :%f\r\n\
-//SCT200T15003-Channel: 8  Temperature :%f\r\n\
-//SCT200T15003-Channel: 1  FREQUENCY:%f\r\n\
-//SCT200T15003-Channel: 2  FREQUENCY:%f\r\n\
-//SCT200T15003-Channel: 3  FREQUENCY:%f\r\n\
-//SCT200T15003-Channel: 4  FREQUENCY:%f\r\n",
-//get_time(),dev_ID,get_dev_voltage(get_adc_value()),\
-//GetNTCTemperature(LTC2402_GetResistance(5)),\
-//GetNTCTemperature(LTC2402_GetResistance(6)),\
-//GetNTCTemperature(LTC2402_GetResistance(7)),\
-//GetNTCTemperature(LTC2402_GetResistance(8)),\
-//GetFreq(1),GetFreq(2),GetFreq(3),GetFreq(4));
-//			HandleDataPackage(str_buff);//打包通过串口发送
-//	}
